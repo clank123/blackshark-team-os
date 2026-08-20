@@ -1,4 +1,4 @@
 interface:
   display_name: "黑鲨月度经营编译器"
-  short_description: "把单店月度经营会议材料编译为七段式运营方案和一张可推进业务表"
-  default_prompt: "使用 $blackshark-monthly-ops-compiler，根据目标门店和本月会议材料生成月度运营方案与推进表预览。"
+  short_description: "把单店月度会议材料编译为本地七段式方案和一张推进表"
+  default_prompt: "使用 $blackshark-monthly-ops-compiler，根据目标门店和本月会议材料生成本地月度运营方案与推进表；未经我确认，不发布飞书。"

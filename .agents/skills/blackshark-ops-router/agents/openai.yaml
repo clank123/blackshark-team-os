@@ -1,0 +1,4 @@
+interface:
+  display_name: "黑鲨门店运营 Router"
+  short_description: "匹配个人知识库，路由门店任务并保护个人与共享知识边界"
+  default_prompt: "使用 $blackshark-ops-router 启用黑鲨门店运营工作台。先检测并展示建议位置，得到我的确认后再配置。"

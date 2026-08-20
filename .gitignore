@@ -1,3 +1,22 @@
 03_projects/*
 !03_projects/README.md
 
+00_workspace/工作台地图.local.md
+03_my_workspace/*
+!03_my_workspace/00_inbox/
+03_my_workspace/00_inbox/*
+!03_my_workspace/00_inbox/README.md
+!03_my_workspace/01_projects/
+03_my_workspace/01_projects/*
+!03_my_workspace/01_projects/README.md
+!03_my_workspace/02_outputs/
+03_my_workspace/02_outputs/*
+!03_my_workspace/02_outputs/README.md
+!03_my_workspace/03_reviews/
+03_my_workspace/03_reviews/*
+!03_my_workspace/03_reviews/README.md
+!03_my_workspace/04_personal/
+03_my_workspace/04_personal/*
+!03_my_workspace/04_personal/README.md
+05_upstream_candidates/*
+!05_upstream_candidates/README.md

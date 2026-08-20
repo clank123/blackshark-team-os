@@ -1,0 +1,2179 @@
+{
+  "schema": "blackshark-team-os-isolated-acceptance/v3",
+  "release": "v0.2",
+  "source_payload": {
+    "identity": "blackshark-team-os/v0.2",
+    "files": [
+      {
+        "path": ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+        "byte_size": 6958,
+        "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+      },
+      {
+        "path": ".agents/skills/blackshark-ops-router/SKILL.md",
+        "byte_size": 2974,
+        "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+      },
+      {
+        "path": "01_shared_context/黑鲨经营边界.md",
+        "byte_size": 2964,
+        "file_sha256": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed"
+      },
+      {
+        "path": "02_store_cards/00-七店索引.md",
+        "byte_size": 1823,
+        "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+      },
+      {
+        "path": "04_templates/月度会议输入模板.md",
+        "byte_size": 1233,
+        "file_sha256": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f"
+      },
+      {
+        "path": "04_templates/月度运营方案模板.md",
+        "byte_size": 2348,
+        "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+      },
+      {
+        "path": "workspace-manifest.json",
+        "byte_size": 717,
+        "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+      }
+    ]
+  },
+  "sanitized_run_id": "isolated-v02-20260820t161656",
+  "started_at": "2026-08-19T21:59:07+08:00",
+  "ended_at": "2026-08-20T16:16:56.643230+08:00",
+  "input_sha256": "fa99598240d092554afcba47db49b1170aef6680c5b8052bc67a33594a8d0cab",
+  "input_fixture": {
+    "path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/input/二店-2026-08-去敏输入.md",
+    "encoding": "UTF-8",
+    "file_sha256": "fa99598240d092554afcba47db49b1170aef6680c5b8052bc67a33594a8d0cab"
+  },
+  "hash_contract": {
+    "encoding": "UTF-8",
+    "row_format": "relative_path<TAB>byte_size<TAB>file_sha256<LF>",
+    "path_base": "inventory_scope_alias root",
+    "path_separator": "POSIX /",
+    "path_rules": [
+      "relative",
+      "no ..",
+      "not absolute"
+    ],
+    "sort": "relative_path ascending by Unicode code point (Python str order)",
+    "terminal_lf": true,
+    "aggregate": "SHA-256(concatenated UTF-8 rows)",
+    "empty_inventory": "SHA-256(empty bytes)"
+  },
+  "scenarios": {
+    "scenario-01": {
+      "title": "只有 Router Skill，缺少完整知识包",
+      "status": "通过",
+      "checks": {
+        "zero_write_before_confirmation": true,
+        "local_public_payload_substitute": true,
+        "manifest_identity_valid": true,
+        "critical_payload_valid": true,
+        "atomic_activation": true,
+        "local_map_created": true,
+        "personal_directories_created": true,
+        "network_download_verified": false
+      },
+      "artifact_sha256": {
+        ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0",
+        ".agents/skills/blackshark-ops-router/SKILL.md": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9",
+        "workspace-manifest.json": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+      },
+      "inventory_scope_alias": "scenario-01/write-root",
+      "before_inventory": {
+        "entries": [],
+        "aggregate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "after_inventory": {
+        "entries": [
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-monthly-ops-compiler/agents/openai.yaml",
+            "byte_size": 339,
+            "file_sha256": "95686cff8dcc9bad405b9a2e5e4bf0a42f42d925f811a4f9549c7b36f8ea8ff4"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md",
+            "byte_size": 2719,
+            "file_sha256": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md",
+            "byte_size": 5246,
+            "file_sha256": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md",
+            "byte_size": 4976,
+            "file_sha256": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-ops-router/agents/openai.yaml",
+            "byte_size": 310,
+            "file_sha256": "ce00cdf3afdd4163f954e9142280d09fbd5d754d5100af7c324f62aa3af0e815"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-ops-router/references/first-run.md",
+            "byte_size": 6872,
+            "file_sha256": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-ops-router/references/update-and-conflict.md",
+            "byte_size": 1632,
+            "file_sha256": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6"
+          },
+          {
+            "relative_path": "workspace/.agents/skills/blackshark-ops-router/references/workspace-map-contract.md",
+            "byte_size": 907,
+            "file_sha256": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8"
+          },
+          {
+            "relative_path": "workspace/.gitignore",
+            "byte_size": 633,
+            "file_sha256": "08efe295e68192fbc8e89a4816f4fbcd73638792f996c84afbd983f87f3e63a4"
+          },
+          {
+            "relative_path": "workspace/00_workspace/工作台地图.local.md",
+            "byte_size": 100,
+            "file_sha256": "b6da09eec9e19b94b3aa75673dd82520a1fe070c56d4df5e54ce0377764998cb"
+          },
+          {
+            "relative_path": "workspace/00_workspace/工作台地图模板.md",
+            "byte_size": 525,
+            "file_sha256": "010326d989b9c2be405bea0dfafda6c2521e4fb74367d18941426da095ad02a8"
+          },
+          {
+            "relative_path": "workspace/00_workspace/工作台首页.md",
+            "byte_size": 616,
+            "file_sha256": "94ac6194f35c0fe2a32e86fd9ddf5e26c861a2c4d2cecde62a84e3b89e9afbf7"
+          },
+          {
+            "relative_path": "workspace/00_workspace/首次启用验收清单.md",
+            "byte_size": 5396,
+            "file_sha256": "c4b5ab2198e52ebb1933e1020b04aa5d926d496bdcf3f29fce7edf5926fc3bf3"
+          },
+          {
+            "relative_path": "workspace/01_shared_context/月度经营框架.md",
+            "byte_size": 2883,
+            "file_sha256": "2bac10b67de964434671e78ff8e0379ad63025ebea9bdb1a984b1e4906a9e978"
+          },
+          {
+            "relative_path": "workspace/01_shared_context/胡子品牌共享真值.md",
+            "byte_size": 2368,
+            "file_sha256": "42a297960230e79e71b7db15caaec17f833d970876f90b995886bb66b0656bcd"
+          },
+          {
+            "relative_path": "workspace/01_shared_context/黑鲨经营边界.md",
+            "byte_size": 2964,
+            "file_sha256": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/00-七店索引.md",
+            "byte_size": 1823,
+            "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/01-一店.md",
+            "byte_size": 2409,
+            "file_sha256": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/02-二店.md",
+            "byte_size": 2888,
+            "file_sha256": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/03-三店.md",
+            "byte_size": 2239,
+            "file_sha256": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/04-四店.md",
+            "byte_size": 2287,
+            "file_sha256": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/05-五店.md",
+            "byte_size": 2486,
+            "file_sha256": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/06-野马.md",
+            "byte_size": 2839,
+            "file_sha256": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df"
+          },
+          {
+            "relative_path": "workspace/02_store_cards/07-七店.md",
+            "byte_size": 2479,
+            "file_sha256": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb"
+          },
+          {
+            "relative_path": "workspace/03_my_workspace/00_inbox/README.md",
+            "byte_size": 157,
+            "file_sha256": "f65d712adf09e2b4dc02f78a0ce61ae8da23a10bfe7885b12dddc8ac7d3ee30a"
+          },
+          {
+            "relative_path": "workspace/03_my_workspace/01_projects/README.md",
+            "byte_size": 154,
+            "file_sha256": "ca50fcbbc061a2c9a88375fabbf85b6784bd0d01386e794df68b483d216a4f52"
+          },
+          {
+            "relative_path": "workspace/03_my_workspace/02_outputs/README.md",
+            "byte_size": 142,
+            "file_sha256": "5ba106999e316789dfa39fac7c6fae654be9cbd94d0beccf1f2a3e98ad121535"
+          },
+          {
+            "relative_path": "workspace/03_my_workspace/03_reviews/README.md",
+            "byte_size": 106,
+            "file_sha256": "26133d8f4348a1370233a9e2bbd238a488bdaf266dfd3f61fc3d206ad3359218"
+          },
+          {
+            "relative_path": "workspace/03_my_workspace/04_personal/README.md",
+            "byte_size": 109,
+            "file_sha256": "61e116fb9601a48f11a547d42224aca794dcd015be1ea72e5efe4cf56af2ae86"
+          },
+          {
+            "relative_path": "workspace/03_projects/README.md",
+            "byte_size": 3806,
+            "file_sha256": "1d083fa5b11ef870ee04ad8925c0c4edbcfceef369b5df371c5230a2de444a94"
+          },
+          {
+            "relative_path": "workspace/04_templates/月度会议输入模板.md",
+            "byte_size": 1233,
+            "file_sha256": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f"
+          },
+          {
+            "relative_path": "workspace/04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "workspace/04_templates/本地产物包/README.md",
+            "byte_size": 1577,
+            "file_sha256": "009609e69d1151facbf9db315050e196c806c889a602af2fbe820fee06ca2acc"
+          },
+          {
+            "relative_path": "workspace/04_templates/本地产物包/发布说明模板.md",
+            "byte_size": 1413,
+            "file_sha256": "37042079dd6f96aa4e8c1b85e6c6257e9fd6c92f22ac3187e4cecea0ab27e52e"
+          },
+          {
+            "relative_path": "workspace/04_templates/本地产物包/运营推进表.csv",
+            "byte_size": 120,
+            "file_sha256": "f76fad2daeb54dbe4d34c26b9f0dbea13c3806b05ecea89fde98be290a5c3fa0"
+          },
+          {
+            "relative_path": "workspace/04_templates/本地产物包/验收结果模板.md",
+            "byte_size": 1128,
+            "file_sha256": "a1ed91a1c812b2783a002ab025d8f7f62bdd43dc8cf67818dca602c7a128e965"
+          },
+          {
+            "relative_path": "workspace/04_templates/运营推进表模板/README.md",
+            "byte_size": 1467,
+            "file_sha256": "56d627885e57140f05686447745aea08f89395e9f35c549cf97817921ea5ce9c"
+          },
+          {
+            "relative_path": "workspace/04_templates/运营推进表模板/schema.json",
+            "byte_size": 1597,
+            "file_sha256": "51a48d1d8b6affc6eddfd2181fba07a5f73052081db504cae35038e49669f246"
+          },
+          {
+            "relative_path": "workspace/05_reviews/v0.2-隔离模拟证据.json",
+            "byte_size": 42383,
+            "file_sha256": "c5d2b39996da61efb34a7dd15d0951c8b92f05570b4d2b1a4f36009fe2f9147c"
+          },
+          {
+            "relative_path": "workspace/05_reviews/v0.2-隔离模拟验收记录.md",
+            "byte_size": 8688,
+            "file_sha256": "80187687b71b6f0dfffa5b7b76d7ef54f1973c853164f33c659627401d588862"
+          },
+          {
+            "relative_path": "workspace/05_reviews/月度复盘候选/README.md",
+            "byte_size": 2311,
+            "file_sha256": "d711755f42cef076d40730609e4593e1304dd6872fa0edff3e53a14335161e12"
+          },
+          {
+            "relative_path": "workspace/05_reviews/独立运行验收表.md",
+            "byte_size": 3312,
+            "file_sha256": "d1d97992b8f90c26964dbb8e6ca0febb92f5ecdd8d1bf11e8dc8ed76a6dafd50"
+          },
+          {
+            "relative_path": "workspace/05_upstream_candidates/README.md",
+            "byte_size": 175,
+            "file_sha256": "4cf11f6cf4837489d2f2ac4dc6d47accc94cb46182a11c0492a4123346a8c16c"
+          },
+          {
+            "relative_path": "workspace/AGENTS.md",
+            "byte_size": 3001,
+            "file_sha256": "ff2e66d2a5c104418185bc4d6362e0dfbde79480a5f9c870c0cc74ce24e6caa6"
+          },
+          {
+            "relative_path": "workspace/README.md",
+            "byte_size": 3260,
+            "file_sha256": "b7701398bcfb35b315482efb9da1591c3a68098fed7611f282cbee728fab312a"
+          },
+          {
+            "relative_path": "workspace/workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          },
+          {
+            "relative_path": "workspace/团队接入卡.md",
+            "byte_size": 1751,
+            "file_sha256": "a9e204225560f9c5c332a1b9d5f2700d6309b35f05e208b3f5bf0afdc395ae93"
+          }
+        ],
+        "aggregate_sha256": "e070f82ea78c0dac73f27a58afbcc8b99fe932959bbb6da619b4565b208c353e"
+      },
+      "confirmation_kind": "isolated_simulation",
+      "pre_confirmation_snapshots": [
+        {
+          "entries": [],
+          "aggregate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "snapshot_id": "pre-confirm-01",
+          "captured_at": "2026-08-20T16:16:56.393688+08:00"
+        },
+        {
+          "entries": [],
+          "aggregate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "snapshot_id": "pre-confirm-02",
+          "captured_at": "2026-08-20T16:16:56.406326+08:00"
+        }
+      ],
+      "staging_inventory": {
+        "inventory_scope_alias": "scenario-01/write-root/staging",
+        "entries": [
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/agents/openai.yaml",
+            "byte_size": 339,
+            "file_sha256": "95686cff8dcc9bad405b9a2e5e4bf0a42f42d925f811a4f9549c7b36f8ea8ff4"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md",
+            "byte_size": 2719,
+            "file_sha256": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md",
+            "byte_size": 5246,
+            "file_sha256": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md",
+            "byte_size": 4976,
+            "file_sha256": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/agents/openai.yaml",
+            "byte_size": 310,
+            "file_sha256": "ce00cdf3afdd4163f954e9142280d09fbd5d754d5100af7c324f62aa3af0e815"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/first-run.md",
+            "byte_size": 6872,
+            "file_sha256": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/update-and-conflict.md",
+            "byte_size": 1632,
+            "file_sha256": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/workspace-map-contract.md",
+            "byte_size": 907,
+            "file_sha256": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8"
+          },
+          {
+            "relative_path": ".gitignore",
+            "byte_size": 633,
+            "file_sha256": "08efe295e68192fbc8e89a4816f4fbcd73638792f996c84afbd983f87f3e63a4"
+          },
+          {
+            "relative_path": "00_workspace/工作台地图模板.md",
+            "byte_size": 525,
+            "file_sha256": "010326d989b9c2be405bea0dfafda6c2521e4fb74367d18941426da095ad02a8"
+          },
+          {
+            "relative_path": "00_workspace/工作台首页.md",
+            "byte_size": 616,
+            "file_sha256": "94ac6194f35c0fe2a32e86fd9ddf5e26c861a2c4d2cecde62a84e3b89e9afbf7"
+          },
+          {
+            "relative_path": "00_workspace/首次启用验收清单.md",
+            "byte_size": 5396,
+            "file_sha256": "c4b5ab2198e52ebb1933e1020b04aa5d926d496bdcf3f29fce7edf5926fc3bf3"
+          },
+          {
+            "relative_path": "01_shared_context/月度经营框架.md",
+            "byte_size": 2883,
+            "file_sha256": "2bac10b67de964434671e78ff8e0379ad63025ebea9bdb1a984b1e4906a9e978"
+          },
+          {
+            "relative_path": "01_shared_context/胡子品牌共享真值.md",
+            "byte_size": 2368,
+            "file_sha256": "42a297960230e79e71b7db15caaec17f833d970876f90b995886bb66b0656bcd"
+          },
+          {
+            "relative_path": "01_shared_context/黑鲨经营边界.md",
+            "byte_size": 2964,
+            "file_sha256": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed"
+          },
+          {
+            "relative_path": "02_store_cards/00-七店索引.md",
+            "byte_size": 1823,
+            "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+          },
+          {
+            "relative_path": "02_store_cards/01-一店.md",
+            "byte_size": 2409,
+            "file_sha256": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0"
+          },
+          {
+            "relative_path": "02_store_cards/02-二店.md",
+            "byte_size": 2888,
+            "file_sha256": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255"
+          },
+          {
+            "relative_path": "02_store_cards/03-三店.md",
+            "byte_size": 2239,
+            "file_sha256": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c"
+          },
+          {
+            "relative_path": "02_store_cards/04-四店.md",
+            "byte_size": 2287,
+            "file_sha256": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5"
+          },
+          {
+            "relative_path": "02_store_cards/05-五店.md",
+            "byte_size": 2486,
+            "file_sha256": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072"
+          },
+          {
+            "relative_path": "02_store_cards/06-野马.md",
+            "byte_size": 2839,
+            "file_sha256": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df"
+          },
+          {
+            "relative_path": "02_store_cards/07-七店.md",
+            "byte_size": 2479,
+            "file_sha256": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb"
+          },
+          {
+            "relative_path": "03_my_workspace/00_inbox/README.md",
+            "byte_size": 157,
+            "file_sha256": "f65d712adf09e2b4dc02f78a0ce61ae8da23a10bfe7885b12dddc8ac7d3ee30a"
+          },
+          {
+            "relative_path": "03_my_workspace/01_projects/README.md",
+            "byte_size": 154,
+            "file_sha256": "ca50fcbbc061a2c9a88375fabbf85b6784bd0d01386e794df68b483d216a4f52"
+          },
+          {
+            "relative_path": "03_my_workspace/02_outputs/README.md",
+            "byte_size": 142,
+            "file_sha256": "5ba106999e316789dfa39fac7c6fae654be9cbd94d0beccf1f2a3e98ad121535"
+          },
+          {
+            "relative_path": "03_my_workspace/03_reviews/README.md",
+            "byte_size": 106,
+            "file_sha256": "26133d8f4348a1370233a9e2bbd238a488bdaf266dfd3f61fc3d206ad3359218"
+          },
+          {
+            "relative_path": "03_my_workspace/04_personal/README.md",
+            "byte_size": 109,
+            "file_sha256": "61e116fb9601a48f11a547d42224aca794dcd015be1ea72e5efe4cf56af2ae86"
+          },
+          {
+            "relative_path": "03_projects/README.md",
+            "byte_size": 3806,
+            "file_sha256": "1d083fa5b11ef870ee04ad8925c0c4edbcfceef369b5df371c5230a2de444a94"
+          },
+          {
+            "relative_path": "04_templates/月度会议输入模板.md",
+            "byte_size": 1233,
+            "file_sha256": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f"
+          },
+          {
+            "relative_path": "04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/README.md",
+            "byte_size": 1577,
+            "file_sha256": "009609e69d1151facbf9db315050e196c806c889a602af2fbe820fee06ca2acc"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/发布说明模板.md",
+            "byte_size": 1413,
+            "file_sha256": "37042079dd6f96aa4e8c1b85e6c6257e9fd6c92f22ac3187e4cecea0ab27e52e"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/运营推进表.csv",
+            "byte_size": 120,
+            "file_sha256": "f76fad2daeb54dbe4d34c26b9f0dbea13c3806b05ecea89fde98be290a5c3fa0"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/验收结果模板.md",
+            "byte_size": 1128,
+            "file_sha256": "a1ed91a1c812b2783a002ab025d8f7f62bdd43dc8cf67818dca602c7a128e965"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/README.md",
+            "byte_size": 1467,
+            "file_sha256": "56d627885e57140f05686447745aea08f89395e9f35c549cf97817921ea5ce9c"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/schema.json",
+            "byte_size": 1597,
+            "file_sha256": "51a48d1d8b6affc6eddfd2181fba07a5f73052081db504cae35038e49669f246"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟证据.json",
+            "byte_size": 42383,
+            "file_sha256": "c5d2b39996da61efb34a7dd15d0951c8b92f05570b4d2b1a4f36009fe2f9147c"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟验收记录.md",
+            "byte_size": 8688,
+            "file_sha256": "80187687b71b6f0dfffa5b7b76d7ef54f1973c853164f33c659627401d588862"
+          },
+          {
+            "relative_path": "05_reviews/月度复盘候选/README.md",
+            "byte_size": 2311,
+            "file_sha256": "d711755f42cef076d40730609e4593e1304dd6872fa0edff3e53a14335161e12"
+          },
+          {
+            "relative_path": "05_reviews/独立运行验收表.md",
+            "byte_size": 3312,
+            "file_sha256": "d1d97992b8f90c26964dbb8e6ca0febb92f5ecdd8d1bf11e8dc8ed76a6dafd50"
+          },
+          {
+            "relative_path": "05_upstream_candidates/README.md",
+            "byte_size": 175,
+            "file_sha256": "4cf11f6cf4837489d2f2ac4dc6d47accc94cb46182a11c0492a4123346a8c16c"
+          },
+          {
+            "relative_path": "AGENTS.md",
+            "byte_size": 3001,
+            "file_sha256": "ff2e66d2a5c104418185bc4d6362e0dfbde79480a5f9c870c0cc74ce24e6caa6"
+          },
+          {
+            "relative_path": "README.md",
+            "byte_size": 3260,
+            "file_sha256": "b7701398bcfb35b315482efb9da1591c3a68098fed7611f282cbee728fab312a"
+          },
+          {
+            "relative_path": "workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          },
+          {
+            "relative_path": "团队接入卡.md",
+            "byte_size": 1751,
+            "file_sha256": "a9e204225560f9c5c332a1b9d5f2700d6309b35f05e208b3f5bf0afdc395ae93"
+          }
+        ],
+        "aggregate_sha256": "cc68727cb0ef2d3a979d3f45feae19c4e2d1c41703522ea4543eb3185e228432"
+      },
+      "event_log": [
+        {
+          "seq": 1,
+          "at": "2026-08-20T16:16:56.380874+08:00",
+          "event": "detect_recommend",
+          "evidence_ref": "scenario-01/pre-confirm-01"
+        },
+        {
+          "seq": 2,
+          "at": "2026-08-20T16:16:56.418873+08:00",
+          "event": "simulated_confirmation",
+          "evidence_ref": "isolated-simulation-only"
+        },
+        {
+          "seq": 3,
+          "at": "2026-08-20T16:16:56.431514+08:00",
+          "event": "unique_staging_created",
+          "evidence_ref": "scenario-01/write-root/staging"
+        },
+        {
+          "seq": 4,
+          "at": "2026-08-20T16:16:56.463970+08:00",
+          "event": "payload_copied",
+          "evidence_ref": "scenario-01/staging-inventory"
+        },
+        {
+          "seq": 5,
+          "at": "2026-08-20T16:16:56.477975+08:00",
+          "event": "manifest_validated",
+          "evidence_ref": "blackshark-team-os/2/v0.2"
+        },
+        {
+          "seq": 6,
+          "at": "2026-08-20T16:16:56.490691+08:00",
+          "event": "atomic_rename",
+          "evidence_ref": "scenario-01/write-root/workspace"
+        },
+        {
+          "seq": 7,
+          "at": "2026-08-20T16:16:56.503413+08:00",
+          "event": "post_activation",
+          "evidence_ref": "staging=false;final=true"
+        }
+      ],
+      "activation_state": {
+        "staging_exists_after_activation": false,
+        "final_target_exists_after_activation": true
+      },
+      "artifact_inventory": {
+        "inventory_scope_alias": "package-root",
+        "entries": [
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": "workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          }
+        ],
+        "aggregate_sha256": "f33aa0969fa5e1fa0bf116e6e7cec43bc378ff46d6a3443040b46712ee114743"
+      }
+    },
+    "scenario-02": {
+      "title": "已有 Obsidian 知识库并选择嵌入",
+      "status": "通过",
+      "checks": {
+        "zero_write_before_confirmation": true,
+        "obsidian_marker_detected": true,
+        "workspace_embedded_in_child_directory": true,
+        "legacy_note_hash_unchanged": true,
+        "protected_legacy_inventory_hash_unchanged": true,
+        "local_map_created": true
+      },
+      "artifact_sha256": {
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-02/fake-vault/旧笔记.md": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab"
+      },
+      "inventory_scope_alias": "scenario-02/fake-vault",
+      "before_inventory": {
+        "entries": [
+          {
+            "relative_path": ".obsidian/app.json",
+            "byte_size": 3,
+            "file_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+          },
+          {
+            "relative_path": "protected-legacy/旧笔记.md",
+            "byte_size": 56,
+            "file_sha256": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab"
+          }
+        ],
+        "aggregate_sha256": "ae0b45515cc11049ae269bc9871a9684275a4a066203ad203e548787bdea4a1f"
+      },
+      "after_inventory": {
+        "entries": [
+          {
+            "relative_path": ".obsidian/app.json",
+            "byte_size": 3,
+            "file_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+          },
+          {
+            "relative_path": "protected-legacy/旧笔记.md",
+            "byte_size": 56,
+            "file_sha256": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-monthly-ops-compiler/agents/openai.yaml",
+            "byte_size": 339,
+            "file_sha256": "95686cff8dcc9bad405b9a2e5e4bf0a42f42d925f811a4f9549c7b36f8ea8ff4"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md",
+            "byte_size": 2719,
+            "file_sha256": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md",
+            "byte_size": 5246,
+            "file_sha256": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md",
+            "byte_size": 4976,
+            "file_sha256": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-ops-router/agents/openai.yaml",
+            "byte_size": 310,
+            "file_sha256": "ce00cdf3afdd4163f954e9142280d09fbd5d754d5100af7c324f62aa3af0e815"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-ops-router/references/first-run.md",
+            "byte_size": 6872,
+            "file_sha256": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-ops-router/references/update-and-conflict.md",
+            "byte_size": 1632,
+            "file_sha256": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6"
+          },
+          {
+            "relative_path": "团队工作台/.agents/skills/blackshark-ops-router/references/workspace-map-contract.md",
+            "byte_size": 907,
+            "file_sha256": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8"
+          },
+          {
+            "relative_path": "团队工作台/.gitignore",
+            "byte_size": 633,
+            "file_sha256": "08efe295e68192fbc8e89a4816f4fbcd73638792f996c84afbd983f87f3e63a4"
+          },
+          {
+            "relative_path": "团队工作台/00_workspace/工作台地图.local.md",
+            "byte_size": 106,
+            "file_sha256": "d5fe7722abfbcc2d3e7e77e62426373e31f1b531d635c27b7ccede32b208bad3"
+          },
+          {
+            "relative_path": "团队工作台/00_workspace/工作台地图模板.md",
+            "byte_size": 525,
+            "file_sha256": "010326d989b9c2be405bea0dfafda6c2521e4fb74367d18941426da095ad02a8"
+          },
+          {
+            "relative_path": "团队工作台/00_workspace/工作台首页.md",
+            "byte_size": 616,
+            "file_sha256": "94ac6194f35c0fe2a32e86fd9ddf5e26c861a2c4d2cecde62a84e3b89e9afbf7"
+          },
+          {
+            "relative_path": "团队工作台/00_workspace/首次启用验收清单.md",
+            "byte_size": 5396,
+            "file_sha256": "c4b5ab2198e52ebb1933e1020b04aa5d926d496bdcf3f29fce7edf5926fc3bf3"
+          },
+          {
+            "relative_path": "团队工作台/01_shared_context/月度经营框架.md",
+            "byte_size": 2883,
+            "file_sha256": "2bac10b67de964434671e78ff8e0379ad63025ebea9bdb1a984b1e4906a9e978"
+          },
+          {
+            "relative_path": "团队工作台/01_shared_context/胡子品牌共享真值.md",
+            "byte_size": 2368,
+            "file_sha256": "42a297960230e79e71b7db15caaec17f833d970876f90b995886bb66b0656bcd"
+          },
+          {
+            "relative_path": "团队工作台/01_shared_context/黑鲨经营边界.md",
+            "byte_size": 2964,
+            "file_sha256": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/00-七店索引.md",
+            "byte_size": 1823,
+            "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/01-一店.md",
+            "byte_size": 2409,
+            "file_sha256": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/02-二店.md",
+            "byte_size": 2888,
+            "file_sha256": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/03-三店.md",
+            "byte_size": 2239,
+            "file_sha256": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/04-四店.md",
+            "byte_size": 2287,
+            "file_sha256": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/05-五店.md",
+            "byte_size": 2486,
+            "file_sha256": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/06-野马.md",
+            "byte_size": 2839,
+            "file_sha256": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df"
+          },
+          {
+            "relative_path": "团队工作台/02_store_cards/07-七店.md",
+            "byte_size": 2479,
+            "file_sha256": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb"
+          },
+          {
+            "relative_path": "团队工作台/03_my_workspace/00_inbox/README.md",
+            "byte_size": 157,
+            "file_sha256": "f65d712adf09e2b4dc02f78a0ce61ae8da23a10bfe7885b12dddc8ac7d3ee30a"
+          },
+          {
+            "relative_path": "团队工作台/03_my_workspace/01_projects/README.md",
+            "byte_size": 154,
+            "file_sha256": "ca50fcbbc061a2c9a88375fabbf85b6784bd0d01386e794df68b483d216a4f52"
+          },
+          {
+            "relative_path": "团队工作台/03_my_workspace/02_outputs/README.md",
+            "byte_size": 142,
+            "file_sha256": "5ba106999e316789dfa39fac7c6fae654be9cbd94d0beccf1f2a3e98ad121535"
+          },
+          {
+            "relative_path": "团队工作台/03_my_workspace/03_reviews/README.md",
+            "byte_size": 106,
+            "file_sha256": "26133d8f4348a1370233a9e2bbd238a488bdaf266dfd3f61fc3d206ad3359218"
+          },
+          {
+            "relative_path": "团队工作台/03_my_workspace/04_personal/README.md",
+            "byte_size": 109,
+            "file_sha256": "61e116fb9601a48f11a547d42224aca794dcd015be1ea72e5efe4cf56af2ae86"
+          },
+          {
+            "relative_path": "团队工作台/03_projects/README.md",
+            "byte_size": 3806,
+            "file_sha256": "1d083fa5b11ef870ee04ad8925c0c4edbcfceef369b5df371c5230a2de444a94"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/月度会议输入模板.md",
+            "byte_size": 1233,
+            "file_sha256": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/本地产物包/README.md",
+            "byte_size": 1577,
+            "file_sha256": "009609e69d1151facbf9db315050e196c806c889a602af2fbe820fee06ca2acc"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/本地产物包/发布说明模板.md",
+            "byte_size": 1413,
+            "file_sha256": "37042079dd6f96aa4e8c1b85e6c6257e9fd6c92f22ac3187e4cecea0ab27e52e"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/本地产物包/运营推进表.csv",
+            "byte_size": 120,
+            "file_sha256": "f76fad2daeb54dbe4d34c26b9f0dbea13c3806b05ecea89fde98be290a5c3fa0"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/本地产物包/验收结果模板.md",
+            "byte_size": 1128,
+            "file_sha256": "a1ed91a1c812b2783a002ab025d8f7f62bdd43dc8cf67818dca602c7a128e965"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/运营推进表模板/README.md",
+            "byte_size": 1467,
+            "file_sha256": "56d627885e57140f05686447745aea08f89395e9f35c549cf97817921ea5ce9c"
+          },
+          {
+            "relative_path": "团队工作台/04_templates/运营推进表模板/schema.json",
+            "byte_size": 1597,
+            "file_sha256": "51a48d1d8b6affc6eddfd2181fba07a5f73052081db504cae35038e49669f246"
+          },
+          {
+            "relative_path": "团队工作台/05_reviews/v0.2-隔离模拟证据.json",
+            "byte_size": 42383,
+            "file_sha256": "c5d2b39996da61efb34a7dd15d0951c8b92f05570b4d2b1a4f36009fe2f9147c"
+          },
+          {
+            "relative_path": "团队工作台/05_reviews/v0.2-隔离模拟验收记录.md",
+            "byte_size": 8688,
+            "file_sha256": "80187687b71b6f0dfffa5b7b76d7ef54f1973c853164f33c659627401d588862"
+          },
+          {
+            "relative_path": "团队工作台/05_reviews/月度复盘候选/README.md",
+            "byte_size": 2311,
+            "file_sha256": "d711755f42cef076d40730609e4593e1304dd6872fa0edff3e53a14335161e12"
+          },
+          {
+            "relative_path": "团队工作台/05_reviews/独立运行验收表.md",
+            "byte_size": 3312,
+            "file_sha256": "d1d97992b8f90c26964dbb8e6ca0febb92f5ecdd8d1bf11e8dc8ed76a6dafd50"
+          },
+          {
+            "relative_path": "团队工作台/05_upstream_candidates/README.md",
+            "byte_size": 175,
+            "file_sha256": "4cf11f6cf4837489d2f2ac4dc6d47accc94cb46182a11c0492a4123346a8c16c"
+          },
+          {
+            "relative_path": "团队工作台/AGENTS.md",
+            "byte_size": 3001,
+            "file_sha256": "ff2e66d2a5c104418185bc4d6362e0dfbde79480a5f9c870c0cc74ce24e6caa6"
+          },
+          {
+            "relative_path": "团队工作台/README.md",
+            "byte_size": 3260,
+            "file_sha256": "b7701398bcfb35b315482efb9da1591c3a68098fed7611f282cbee728fab312a"
+          },
+          {
+            "relative_path": "团队工作台/workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          },
+          {
+            "relative_path": "团队工作台/团队接入卡.md",
+            "byte_size": 1751,
+            "file_sha256": "a9e204225560f9c5c332a1b9d5f2700d6309b35f05e208b3f5bf0afdc395ae93"
+          }
+        ],
+        "aggregate_sha256": "0a200eab3ab1243097d74ea53c5f594c8b52c44f79ade2b25105b93c4fe69887"
+      },
+      "artifact_inventory": {
+        "inventory_scope_alias": "package-root",
+        "entries": [
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-02/fake-vault/旧笔记.md",
+            "byte_size": 56,
+            "file_sha256": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab"
+          }
+        ],
+        "aggregate_sha256": "19f496fddb5d87653bcb68b3694e2ee6e889c35a986bb7391aea7c7799adc0f9"
+      },
+      "confirmation_kind": "isolated_simulation",
+      "pre_confirmation_snapshots": [
+        {
+          "entries": [
+            {
+              "relative_path": ".obsidian/app.json",
+              "byte_size": 3,
+              "file_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+            },
+            {
+              "relative_path": "protected-legacy/旧笔记.md",
+              "byte_size": 56,
+              "file_sha256": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab"
+            }
+          ],
+          "aggregate_sha256": "ae0b45515cc11049ae269bc9871a9684275a4a066203ad203e548787bdea4a1f",
+          "snapshot_id": "pre-confirm-01",
+          "captured_at": "2026-08-20T16:16:56.533499+08:00"
+        },
+        {
+          "entries": [
+            {
+              "relative_path": ".obsidian/app.json",
+              "byte_size": 3,
+              "file_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+            },
+            {
+              "relative_path": "protected-legacy/旧笔记.md",
+              "byte_size": 56,
+              "file_sha256": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab"
+            }
+          ],
+          "aggregate_sha256": "ae0b45515cc11049ae269bc9871a9684275a4a066203ad203e548787bdea4a1f",
+          "snapshot_id": "pre-confirm-02",
+          "captured_at": "2026-08-20T16:16:56.546351+08:00"
+        }
+      ],
+      "staging_inventory": {
+        "inventory_scope_alias": "scenario-02/fake-vault/staging",
+        "entries": [
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/agents/openai.yaml",
+            "byte_size": 339,
+            "file_sha256": "95686cff8dcc9bad405b9a2e5e4bf0a42f42d925f811a4f9549c7b36f8ea8ff4"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md",
+            "byte_size": 2719,
+            "file_sha256": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md",
+            "byte_size": 5246,
+            "file_sha256": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md",
+            "byte_size": 4976,
+            "file_sha256": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/agents/openai.yaml",
+            "byte_size": 310,
+            "file_sha256": "ce00cdf3afdd4163f954e9142280d09fbd5d754d5100af7c324f62aa3af0e815"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/first-run.md",
+            "byte_size": 6872,
+            "file_sha256": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/update-and-conflict.md",
+            "byte_size": 1632,
+            "file_sha256": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/workspace-map-contract.md",
+            "byte_size": 907,
+            "file_sha256": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8"
+          },
+          {
+            "relative_path": ".gitignore",
+            "byte_size": 633,
+            "file_sha256": "08efe295e68192fbc8e89a4816f4fbcd73638792f996c84afbd983f87f3e63a4"
+          },
+          {
+            "relative_path": "00_workspace/工作台地图模板.md",
+            "byte_size": 525,
+            "file_sha256": "010326d989b9c2be405bea0dfafda6c2521e4fb74367d18941426da095ad02a8"
+          },
+          {
+            "relative_path": "00_workspace/工作台首页.md",
+            "byte_size": 616,
+            "file_sha256": "94ac6194f35c0fe2a32e86fd9ddf5e26c861a2c4d2cecde62a84e3b89e9afbf7"
+          },
+          {
+            "relative_path": "00_workspace/首次启用验收清单.md",
+            "byte_size": 5396,
+            "file_sha256": "c4b5ab2198e52ebb1933e1020b04aa5d926d496bdcf3f29fce7edf5926fc3bf3"
+          },
+          {
+            "relative_path": "01_shared_context/月度经营框架.md",
+            "byte_size": 2883,
+            "file_sha256": "2bac10b67de964434671e78ff8e0379ad63025ebea9bdb1a984b1e4906a9e978"
+          },
+          {
+            "relative_path": "01_shared_context/胡子品牌共享真值.md",
+            "byte_size": 2368,
+            "file_sha256": "42a297960230e79e71b7db15caaec17f833d970876f90b995886bb66b0656bcd"
+          },
+          {
+            "relative_path": "01_shared_context/黑鲨经营边界.md",
+            "byte_size": 2964,
+            "file_sha256": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed"
+          },
+          {
+            "relative_path": "02_store_cards/00-七店索引.md",
+            "byte_size": 1823,
+            "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+          },
+          {
+            "relative_path": "02_store_cards/01-一店.md",
+            "byte_size": 2409,
+            "file_sha256": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0"
+          },
+          {
+            "relative_path": "02_store_cards/02-二店.md",
+            "byte_size": 2888,
+            "file_sha256": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255"
+          },
+          {
+            "relative_path": "02_store_cards/03-三店.md",
+            "byte_size": 2239,
+            "file_sha256": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c"
+          },
+          {
+            "relative_path": "02_store_cards/04-四店.md",
+            "byte_size": 2287,
+            "file_sha256": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5"
+          },
+          {
+            "relative_path": "02_store_cards/05-五店.md",
+            "byte_size": 2486,
+            "file_sha256": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072"
+          },
+          {
+            "relative_path": "02_store_cards/06-野马.md",
+            "byte_size": 2839,
+            "file_sha256": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df"
+          },
+          {
+            "relative_path": "02_store_cards/07-七店.md",
+            "byte_size": 2479,
+            "file_sha256": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb"
+          },
+          {
+            "relative_path": "03_my_workspace/00_inbox/README.md",
+            "byte_size": 157,
+            "file_sha256": "f65d712adf09e2b4dc02f78a0ce61ae8da23a10bfe7885b12dddc8ac7d3ee30a"
+          },
+          {
+            "relative_path": "03_my_workspace/01_projects/README.md",
+            "byte_size": 154,
+            "file_sha256": "ca50fcbbc061a2c9a88375fabbf85b6784bd0d01386e794df68b483d216a4f52"
+          },
+          {
+            "relative_path": "03_my_workspace/02_outputs/README.md",
+            "byte_size": 142,
+            "file_sha256": "5ba106999e316789dfa39fac7c6fae654be9cbd94d0beccf1f2a3e98ad121535"
+          },
+          {
+            "relative_path": "03_my_workspace/03_reviews/README.md",
+            "byte_size": 106,
+            "file_sha256": "26133d8f4348a1370233a9e2bbd238a488bdaf266dfd3f61fc3d206ad3359218"
+          },
+          {
+            "relative_path": "03_my_workspace/04_personal/README.md",
+            "byte_size": 109,
+            "file_sha256": "61e116fb9601a48f11a547d42224aca794dcd015be1ea72e5efe4cf56af2ae86"
+          },
+          {
+            "relative_path": "03_projects/README.md",
+            "byte_size": 3806,
+            "file_sha256": "1d083fa5b11ef870ee04ad8925c0c4edbcfceef369b5df371c5230a2de444a94"
+          },
+          {
+            "relative_path": "04_templates/月度会议输入模板.md",
+            "byte_size": 1233,
+            "file_sha256": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f"
+          },
+          {
+            "relative_path": "04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/README.md",
+            "byte_size": 1577,
+            "file_sha256": "009609e69d1151facbf9db315050e196c806c889a602af2fbe820fee06ca2acc"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/发布说明模板.md",
+            "byte_size": 1413,
+            "file_sha256": "37042079dd6f96aa4e8c1b85e6c6257e9fd6c92f22ac3187e4cecea0ab27e52e"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/运营推进表.csv",
+            "byte_size": 120,
+            "file_sha256": "f76fad2daeb54dbe4d34c26b9f0dbea13c3806b05ecea89fde98be290a5c3fa0"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/验收结果模板.md",
+            "byte_size": 1128,
+            "file_sha256": "a1ed91a1c812b2783a002ab025d8f7f62bdd43dc8cf67818dca602c7a128e965"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/README.md",
+            "byte_size": 1467,
+            "file_sha256": "56d627885e57140f05686447745aea08f89395e9f35c549cf97817921ea5ce9c"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/schema.json",
+            "byte_size": 1597,
+            "file_sha256": "51a48d1d8b6affc6eddfd2181fba07a5f73052081db504cae35038e49669f246"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟证据.json",
+            "byte_size": 42383,
+            "file_sha256": "c5d2b39996da61efb34a7dd15d0951c8b92f05570b4d2b1a4f36009fe2f9147c"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟验收记录.md",
+            "byte_size": 8688,
+            "file_sha256": "80187687b71b6f0dfffa5b7b76d7ef54f1973c853164f33c659627401d588862"
+          },
+          {
+            "relative_path": "05_reviews/月度复盘候选/README.md",
+            "byte_size": 2311,
+            "file_sha256": "d711755f42cef076d40730609e4593e1304dd6872fa0edff3e53a14335161e12"
+          },
+          {
+            "relative_path": "05_reviews/独立运行验收表.md",
+            "byte_size": 3312,
+            "file_sha256": "d1d97992b8f90c26964dbb8e6ca0febb92f5ecdd8d1bf11e8dc8ed76a6dafd50"
+          },
+          {
+            "relative_path": "05_upstream_candidates/README.md",
+            "byte_size": 175,
+            "file_sha256": "4cf11f6cf4837489d2f2ac4dc6d47accc94cb46182a11c0492a4123346a8c16c"
+          },
+          {
+            "relative_path": "AGENTS.md",
+            "byte_size": 3001,
+            "file_sha256": "ff2e66d2a5c104418185bc4d6362e0dfbde79480a5f9c870c0cc74ce24e6caa6"
+          },
+          {
+            "relative_path": "README.md",
+            "byte_size": 3260,
+            "file_sha256": "b7701398bcfb35b315482efb9da1591c3a68098fed7611f282cbee728fab312a"
+          },
+          {
+            "relative_path": "workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          },
+          {
+            "relative_path": "团队接入卡.md",
+            "byte_size": 1751,
+            "file_sha256": "a9e204225560f9c5c332a1b9d5f2700d6309b35f05e208b3f5bf0afdc395ae93"
+          }
+        ],
+        "aggregate_sha256": "cc68727cb0ef2d3a979d3f45feae19c4e2d1c41703522ea4543eb3185e228432"
+      },
+      "event_log": [
+        {
+          "seq": 1,
+          "at": "2026-08-20T16:16:56.520633+08:00",
+          "event": "detect_recommend",
+          "evidence_ref": "scenario-02/fake-vault"
+        },
+        {
+          "seq": 2,
+          "at": "2026-08-20T16:16:56.558874+08:00",
+          "event": "simulated_confirmation",
+          "evidence_ref": "isolated-simulation-only"
+        },
+        {
+          "seq": 3,
+          "at": "2026-08-20T16:16:56.571532+08:00",
+          "event": "unique_staging_created",
+          "evidence_ref": "scenario-02/fake-vault/staging"
+        },
+        {
+          "seq": 4,
+          "at": "2026-08-20T16:16:56.600747+08:00",
+          "event": "payload_copied",
+          "evidence_ref": "scenario-02/staging-inventory"
+        },
+        {
+          "seq": 5,
+          "at": "2026-08-20T16:16:56.617570+08:00",
+          "event": "manifest_validated",
+          "evidence_ref": "blackshark-team-os/2/v0.2"
+        },
+        {
+          "seq": 6,
+          "at": "2026-08-20T16:16:56.630276+08:00",
+          "event": "atomic_rename",
+          "evidence_ref": "scenario-02/fake-vault/团队工作台"
+        },
+        {
+          "seq": 7,
+          "at": "2026-08-20T16:16:56.643230+08:00",
+          "event": "post_activation",
+          "evidence_ref": "legacy-preserved;final=true"
+        }
+      ],
+      "activation_state": {
+        "staging_exists_after_activation": false,
+        "final_target_exists_after_activation": true
+      },
+      "protected_artifacts": [
+        {
+          "fixture_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-02/fake-vault/旧笔记.md",
+          "before_sha256": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab",
+          "after_sha256": "3199996b554ae8fd40d0c883aa795c26c28e22231280e9f622879a6f12e266ab"
+        }
+      ]
+    },
+    "scenario-03": {
+      "title": "没有个人知识库并选择独立工作区",
+      "status": "通过",
+      "checks": {
+        "zero_obsidian_candidates": true,
+        "independent_workspace_created": true,
+        "manifest_locatable": true,
+        "shared_context_locatable": true,
+        "seven_store_index_locatable": true,
+        "router_skill_locatable": true,
+        "monthly_compiler_skill_locatable": true,
+        "personal_directories_locatable": true,
+        "local_map_locatable": true
+      },
+      "artifact_sha256": {
+        ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0",
+        ".agents/skills/blackshark-ops-router/SKILL.md": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9",
+        "01_shared_context/黑鲨经营边界.md": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed",
+        "02_store_cards/00-七店索引.md": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056",
+        "04_templates/月度运营方案模板.md": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba",
+        "workspace-manifest.json": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+      },
+      "inventory_scope_alias": "scenario-03/workspace/00_workspace",
+      "before_inventory": {
+        "entries": [],
+        "aggregate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "after_inventory": {
+        "entries": [
+          {
+            "relative_path": "工作台地图.local.md",
+            "byte_size": 528,
+            "file_sha256": "23f9a4ce63c88ff8adfbdcdf8ad8f970b41a4411ab5960b7864f805fdd86af29"
+          },
+          {
+            "relative_path": "工作台地图模板.md",
+            "byte_size": 525,
+            "file_sha256": "010326d989b9c2be405bea0dfafda6c2521e4fb74367d18941426da095ad02a8"
+          },
+          {
+            "relative_path": "工作台首页.md",
+            "byte_size": 616,
+            "file_sha256": "94ac6194f35c0fe2a32e86fd9ddf5e26c861a2c4d2cecde62a84e3b89e9afbf7"
+          },
+          {
+            "relative_path": "首次启用验收清单.md",
+            "byte_size": 5396,
+            "file_sha256": "c4b5ab2198e52ebb1933e1020b04aa5d926d496bdcf3f29fce7edf5926fc3bf3"
+          }
+        ],
+        "aggregate_sha256": "355fe12d3013bbf53f88cfa9b363fd51e12e8ca46c23014c0759e179692f3910"
+      },
+      "artifact_inventory": {
+        "inventory_scope_alias": "package-root",
+        "entries": [
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": "01_shared_context/黑鲨经营边界.md",
+            "byte_size": 2964,
+            "file_sha256": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed"
+          },
+          {
+            "relative_path": "02_store_cards/00-七店索引.md",
+            "byte_size": 1823,
+            "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+          },
+          {
+            "relative_path": "04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          }
+        ],
+        "aggregate_sha256": "407e2be12c7f2c65e2dd9cb1b1a0fd9e21a4b8600a483a9f9ada762bb141b548"
+      }
+    },
+    "scenario-04": {
+      "title": "没有飞书权限但完成本地交付",
+      "status": "通过",
+      "checks": {
+        "five_artifacts_generated": true,
+        "seven_sections_valid": true,
+        "csv_ten_fields_valid": true,
+        "json_ten_fields_valid": true,
+        "six_statuses_valid": true,
+        "five_views_valid": true,
+        "action_key_unique": true,
+        "no_template_placeholders": true,
+        "local_relative_links_resolve": true,
+        "feishu_external_write": false
+      },
+      "artifact_sha256": {
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/发布说明.md": "9ac16257650dac06e5f8532a3e7f7fbe0c2f620bfb65a89d0dcae7e57a69847b",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/本月运营方案.md": "2840c85d394cddb640a119485f68cc40af40b3bf9f13b6962d1bacf78c78d631",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/运营推进表.csv": "750904822a5664e9a460caa5a4668e20fb8634a2f1f6433d1ce95c10ebc84e45",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/运营推进表结构.json": "0ea9f789b1a36527a91a00dc23bc541320382abd9db148db94cea1c916913650",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/验收结果.md": "58d9b59d79759d87ff2e81a113e0c6732779be06ec49ed642c8b8fccf9838134"
+      },
+      "inventory_scope_alias": "scenario-04/outputs",
+      "before_inventory": {
+        "entries": [],
+        "aggregate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "after_inventory": {
+        "entries": [
+          {
+            "relative_path": "发布说明.md",
+            "byte_size": 458,
+            "file_sha256": "9ac16257650dac06e5f8532a3e7f7fbe0c2f620bfb65a89d0dcae7e57a69847b"
+          },
+          {
+            "relative_path": "本月运营方案.md",
+            "byte_size": 2848,
+            "file_sha256": "2840c85d394cddb640a119485f68cc40af40b3bf9f13b6962d1bacf78c78d631"
+          },
+          {
+            "relative_path": "运营推进表.csv",
+            "byte_size": 528,
+            "file_sha256": "750904822a5664e9a460caa5a4668e20fb8634a2f1f6433d1ce95c10ebc84e45"
+          },
+          {
+            "relative_path": "运营推进表结构.json",
+            "byte_size": 1645,
+            "file_sha256": "0ea9f789b1a36527a91a00dc23bc541320382abd9db148db94cea1c916913650"
+          },
+          {
+            "relative_path": "验收结果.md",
+            "byte_size": 565,
+            "file_sha256": "58d9b59d79759d87ff2e81a113e0c6732779be06ec49ed642c8b8fccf9838134"
+          }
+        ],
+        "aggregate_sha256": "0d742d092321ab6412201fed2ce5b507bf9a524c3fc7de549d91eed973e0f04b"
+      },
+      "artifact_inventory": {
+        "inventory_scope_alias": "package-root",
+        "entries": [
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/发布说明.md",
+            "byte_size": 458,
+            "file_sha256": "9ac16257650dac06e5f8532a3e7f7fbe0c2f620bfb65a89d0dcae7e57a69847b"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/本月运营方案.md",
+            "byte_size": 2848,
+            "file_sha256": "2840c85d394cddb640a119485f68cc40af40b3bf9f13b6962d1bacf78c78d631"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/运营推进表.csv",
+            "byte_size": 528,
+            "file_sha256": "750904822a5664e9a460caa5a4668e20fb8634a2f1f6433d1ce95c10ebc84e45"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/运营推进表结构.json",
+            "byte_size": 1645,
+            "file_sha256": "0ea9f789b1a36527a91a00dc23bc541320382abd9db148db94cea1c916913650"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-04/outputs/验收结果.md",
+            "byte_size": 565,
+            "file_sha256": "58d9b59d79759d87ff2e81a113e0c6732779be06ec49ed642c8b8fccf9838134"
+          }
+        ],
+        "aggregate_sha256": "14d4c1e22f63a99e34855236abbf52bd7ba3f7cae9225c1c6ff60c713c3b0106"
+      }
+    },
+    "scenario-05": {
+      "title": "更新公共版本后个人项目不被覆盖",
+      "status": "通过",
+      "checks": {
+        "incoming_manifest_valid": true,
+        "official_baseline_difference_detected": true,
+        "update_paused_before_switch": true,
+        "official_local_edit_preserved": true,
+        "personal_project_hash_unchanged": true,
+        "local_map_hash_unchanged": true,
+        "git_pull_used": false
+      },
+      "artifact_sha256": {
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/00_workspace/工作台地图.local.md": "addfba9d937dceaf73c8dcc671e889d55a9625eb1ced96d54d4b50ac979d1791",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/01_shared_context/黑鲨经营边界.md": "339fd25c1f99bd9c15fbb7b1a6695ca3ce8329015dc2d884bf86a40182208d1e",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/03_my_workspace/01_projects/2026-08-隔离项目/个人内容.md": "01de97e63c305b434ff227ac4fa107166476788851f28d3fce4f48ae9a9f8e6d",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/SKILL.md": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/SKILL.md": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/references/first-run.md": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/references/update-and-conflict.md": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/references/workspace-map-contract.md": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/01_shared_context/黑鲨经营边界.md": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/00-七店索引.md": "76d0610b153ab4e5d79bf1a11029b5d2c8182a27f022cd0a549fd2b78ef92c49",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/01-一店.md": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/02-二店.md": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/03-三店.md": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/04-四店.md": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/05-五店.md": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/06-野马.md": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/07-七店.md": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/04_templates/月度运营方案模板.md": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba",
+        "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/workspace-manifest.json": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+      },
+      "inventory_scope_alias": "scenario-05/workspace",
+      "before_inventory": {
+        "entries": [
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/agents/openai.yaml",
+            "byte_size": 339,
+            "file_sha256": "95686cff8dcc9bad405b9a2e5e4bf0a42f42d925f811a4f9549c7b36f8ea8ff4"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md",
+            "byte_size": 2719,
+            "file_sha256": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md",
+            "byte_size": 5246,
+            "file_sha256": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md",
+            "byte_size": 4976,
+            "file_sha256": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/agents/openai.yaml",
+            "byte_size": 310,
+            "file_sha256": "ce00cdf3afdd4163f954e9142280d09fbd5d754d5100af7c324f62aa3af0e815"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/first-run.md",
+            "byte_size": 6872,
+            "file_sha256": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/update-and-conflict.md",
+            "byte_size": 1632,
+            "file_sha256": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/workspace-map-contract.md",
+            "byte_size": 907,
+            "file_sha256": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8"
+          },
+          {
+            "relative_path": ".gitignore",
+            "byte_size": 633,
+            "file_sha256": "08efe295e68192fbc8e89a4816f4fbcd73638792f996c84afbd983f87f3e63a4"
+          },
+          {
+            "relative_path": "00_workspace/工作台地图.local.md",
+            "byte_size": 528,
+            "file_sha256": "addfba9d937dceaf73c8dcc671e889d55a9625eb1ced96d54d4b50ac979d1791"
+          },
+          {
+            "relative_path": "00_workspace/工作台地图模板.md",
+            "byte_size": 525,
+            "file_sha256": "010326d989b9c2be405bea0dfafda6c2521e4fb74367d18941426da095ad02a8"
+          },
+          {
+            "relative_path": "00_workspace/工作台首页.md",
+            "byte_size": 616,
+            "file_sha256": "94ac6194f35c0fe2a32e86fd9ddf5e26c861a2c4d2cecde62a84e3b89e9afbf7"
+          },
+          {
+            "relative_path": "00_workspace/首次启用验收清单.md",
+            "byte_size": 5396,
+            "file_sha256": "c4b5ab2198e52ebb1933e1020b04aa5d926d496bdcf3f29fce7edf5926fc3bf3"
+          },
+          {
+            "relative_path": "01_shared_context/月度经营框架.md",
+            "byte_size": 2883,
+            "file_sha256": "2bac10b67de964434671e78ff8e0379ad63025ebea9bdb1a984b1e4906a9e978"
+          },
+          {
+            "relative_path": "01_shared_context/胡子品牌共享真值.md",
+            "byte_size": 2368,
+            "file_sha256": "42a297960230e79e71b7db15caaec17f833d970876f90b995886bb66b0656bcd"
+          },
+          {
+            "relative_path": "01_shared_context/黑鲨经营边界.md",
+            "byte_size": 3043,
+            "file_sha256": "339fd25c1f99bd9c15fbb7b1a6695ca3ce8329015dc2d884bf86a40182208d1e"
+          },
+          {
+            "relative_path": "02_store_cards/00-七店索引.md",
+            "byte_size": 1823,
+            "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+          },
+          {
+            "relative_path": "02_store_cards/01-一店.md",
+            "byte_size": 2409,
+            "file_sha256": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0"
+          },
+          {
+            "relative_path": "02_store_cards/02-二店.md",
+            "byte_size": 2888,
+            "file_sha256": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255"
+          },
+          {
+            "relative_path": "02_store_cards/03-三店.md",
+            "byte_size": 2239,
+            "file_sha256": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c"
+          },
+          {
+            "relative_path": "02_store_cards/04-四店.md",
+            "byte_size": 2287,
+            "file_sha256": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5"
+          },
+          {
+            "relative_path": "02_store_cards/05-五店.md",
+            "byte_size": 2486,
+            "file_sha256": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072"
+          },
+          {
+            "relative_path": "02_store_cards/06-野马.md",
+            "byte_size": 2839,
+            "file_sha256": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df"
+          },
+          {
+            "relative_path": "02_store_cards/07-七店.md",
+            "byte_size": 2479,
+            "file_sha256": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb"
+          },
+          {
+            "relative_path": "03_my_workspace/00_inbox/README.md",
+            "byte_size": 157,
+            "file_sha256": "f65d712adf09e2b4dc02f78a0ce61ae8da23a10bfe7885b12dddc8ac7d3ee30a"
+          },
+          {
+            "relative_path": "03_my_workspace/01_projects/2026-08-隔离项目/个人内容.md",
+            "byte_size": 89,
+            "file_sha256": "01de97e63c305b434ff227ac4fa107166476788851f28d3fce4f48ae9a9f8e6d"
+          },
+          {
+            "relative_path": "03_my_workspace/01_projects/README.md",
+            "byte_size": 154,
+            "file_sha256": "ca50fcbbc061a2c9a88375fabbf85b6784bd0d01386e794df68b483d216a4f52"
+          },
+          {
+            "relative_path": "03_my_workspace/02_outputs/README.md",
+            "byte_size": 142,
+            "file_sha256": "5ba106999e316789dfa39fac7c6fae654be9cbd94d0beccf1f2a3e98ad121535"
+          },
+          {
+            "relative_path": "03_my_workspace/03_reviews/README.md",
+            "byte_size": 106,
+            "file_sha256": "26133d8f4348a1370233a9e2bbd238a488bdaf266dfd3f61fc3d206ad3359218"
+          },
+          {
+            "relative_path": "03_my_workspace/04_personal/README.md",
+            "byte_size": 109,
+            "file_sha256": "61e116fb9601a48f11a547d42224aca794dcd015be1ea72e5efe4cf56af2ae86"
+          },
+          {
+            "relative_path": "03_projects/README.md",
+            "byte_size": 3806,
+            "file_sha256": "1d083fa5b11ef870ee04ad8925c0c4edbcfceef369b5df371c5230a2de444a94"
+          },
+          {
+            "relative_path": "04_templates/月度会议输入模板.md",
+            "byte_size": 1233,
+            "file_sha256": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f"
+          },
+          {
+            "relative_path": "04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/README.md",
+            "byte_size": 1577,
+            "file_sha256": "009609e69d1151facbf9db315050e196c806c889a602af2fbe820fee06ca2acc"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/发布说明模板.md",
+            "byte_size": 1413,
+            "file_sha256": "37042079dd6f96aa4e8c1b85e6c6257e9fd6c92f22ac3187e4cecea0ab27e52e"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/运营推进表.csv",
+            "byte_size": 120,
+            "file_sha256": "f76fad2daeb54dbe4d34c26b9f0dbea13c3806b05ecea89fde98be290a5c3fa0"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/验收结果模板.md",
+            "byte_size": 1128,
+            "file_sha256": "a1ed91a1c812b2783a002ab025d8f7f62bdd43dc8cf67818dca602c7a128e965"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/README.md",
+            "byte_size": 1467,
+            "file_sha256": "56d627885e57140f05686447745aea08f89395e9f35c549cf97817921ea5ce9c"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/schema.json",
+            "byte_size": 1597,
+            "file_sha256": "51a48d1d8b6affc6eddfd2181fba07a5f73052081db504cae35038e49669f246"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟证据.json",
+            "byte_size": 6157,
+            "file_sha256": "2b76204a33175d1444ddf44877e6b4d54d09939822742ca6860827d6d7b9d12c"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟验收记录.md",
+            "byte_size": 6126,
+            "file_sha256": "d89a5278a0e4f13efab9cd993179da8fb3be352bf8da7d21cede52b4ddb73ef7"
+          },
+          {
+            "relative_path": "05_reviews/月度复盘候选/README.md",
+            "byte_size": 2311,
+            "file_sha256": "d711755f42cef076d40730609e4593e1304dd6872fa0edff3e53a14335161e12"
+          },
+          {
+            "relative_path": "05_reviews/独立运行验收表.md",
+            "byte_size": 3312,
+            "file_sha256": "d1d97992b8f90c26964dbb8e6ca0febb92f5ecdd8d1bf11e8dc8ed76a6dafd50"
+          },
+          {
+            "relative_path": "05_upstream_candidates/README.md",
+            "byte_size": 175,
+            "file_sha256": "4cf11f6cf4837489d2f2ac4dc6d47accc94cb46182a11c0492a4123346a8c16c"
+          },
+          {
+            "relative_path": "AGENTS.md",
+            "byte_size": 3001,
+            "file_sha256": "ff2e66d2a5c104418185bc4d6362e0dfbde79480a5f9c870c0cc74ce24e6caa6"
+          },
+          {
+            "relative_path": "README.md",
+            "byte_size": 3260,
+            "file_sha256": "b7701398bcfb35b315482efb9da1591c3a68098fed7611f282cbee728fab312a"
+          },
+          {
+            "relative_path": "workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          },
+          {
+            "relative_path": "团队接入卡.md",
+            "byte_size": 1751,
+            "file_sha256": "a9e204225560f9c5c332a1b9d5f2700d6309b35f05e208b3f5bf0afdc395ae93"
+          }
+        ],
+        "aggregate_sha256": "e44c1ffcef996be0632b5797919345220407ad69347d267878c1b9aa7c3215ca"
+      },
+      "after_inventory": {
+        "entries": [
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/agents/openai.yaml",
+            "byte_size": 339,
+            "file_sha256": "95686cff8dcc9bad405b9a2e5e4bf0a42f42d925f811a4f9549c7b36f8ea8ff4"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md",
+            "byte_size": 2719,
+            "file_sha256": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md",
+            "byte_size": 5246,
+            "file_sha256": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md",
+            "byte_size": 4976,
+            "file_sha256": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/agents/openai.yaml",
+            "byte_size": 310,
+            "file_sha256": "ce00cdf3afdd4163f954e9142280d09fbd5d754d5100af7c324f62aa3af0e815"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/first-run.md",
+            "byte_size": 6872,
+            "file_sha256": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/update-and-conflict.md",
+            "byte_size": 1632,
+            "file_sha256": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6"
+          },
+          {
+            "relative_path": ".agents/skills/blackshark-ops-router/references/workspace-map-contract.md",
+            "byte_size": 907,
+            "file_sha256": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8"
+          },
+          {
+            "relative_path": ".gitignore",
+            "byte_size": 633,
+            "file_sha256": "08efe295e68192fbc8e89a4816f4fbcd73638792f996c84afbd983f87f3e63a4"
+          },
+          {
+            "relative_path": "00_workspace/工作台地图.local.md",
+            "byte_size": 528,
+            "file_sha256": "addfba9d937dceaf73c8dcc671e889d55a9625eb1ced96d54d4b50ac979d1791"
+          },
+          {
+            "relative_path": "00_workspace/工作台地图模板.md",
+            "byte_size": 525,
+            "file_sha256": "010326d989b9c2be405bea0dfafda6c2521e4fb74367d18941426da095ad02a8"
+          },
+          {
+            "relative_path": "00_workspace/工作台首页.md",
+            "byte_size": 616,
+            "file_sha256": "94ac6194f35c0fe2a32e86fd9ddf5e26c861a2c4d2cecde62a84e3b89e9afbf7"
+          },
+          {
+            "relative_path": "00_workspace/首次启用验收清单.md",
+            "byte_size": 5396,
+            "file_sha256": "c4b5ab2198e52ebb1933e1020b04aa5d926d496bdcf3f29fce7edf5926fc3bf3"
+          },
+          {
+            "relative_path": "01_shared_context/月度经营框架.md",
+            "byte_size": 2883,
+            "file_sha256": "2bac10b67de964434671e78ff8e0379ad63025ebea9bdb1a984b1e4906a9e978"
+          },
+          {
+            "relative_path": "01_shared_context/胡子品牌共享真值.md",
+            "byte_size": 2368,
+            "file_sha256": "42a297960230e79e71b7db15caaec17f833d970876f90b995886bb66b0656bcd"
+          },
+          {
+            "relative_path": "01_shared_context/黑鲨经营边界.md",
+            "byte_size": 3043,
+            "file_sha256": "339fd25c1f99bd9c15fbb7b1a6695ca3ce8329015dc2d884bf86a40182208d1e"
+          },
+          {
+            "relative_path": "02_store_cards/00-七店索引.md",
+            "byte_size": 1823,
+            "file_sha256": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056"
+          },
+          {
+            "relative_path": "02_store_cards/01-一店.md",
+            "byte_size": 2409,
+            "file_sha256": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0"
+          },
+          {
+            "relative_path": "02_store_cards/02-二店.md",
+            "byte_size": 2888,
+            "file_sha256": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255"
+          },
+          {
+            "relative_path": "02_store_cards/03-三店.md",
+            "byte_size": 2239,
+            "file_sha256": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c"
+          },
+          {
+            "relative_path": "02_store_cards/04-四店.md",
+            "byte_size": 2287,
+            "file_sha256": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5"
+          },
+          {
+            "relative_path": "02_store_cards/05-五店.md",
+            "byte_size": 2486,
+            "file_sha256": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072"
+          },
+          {
+            "relative_path": "02_store_cards/06-野马.md",
+            "byte_size": 2839,
+            "file_sha256": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df"
+          },
+          {
+            "relative_path": "02_store_cards/07-七店.md",
+            "byte_size": 2479,
+            "file_sha256": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb"
+          },
+          {
+            "relative_path": "03_my_workspace/00_inbox/README.md",
+            "byte_size": 157,
+            "file_sha256": "f65d712adf09e2b4dc02f78a0ce61ae8da23a10bfe7885b12dddc8ac7d3ee30a"
+          },
+          {
+            "relative_path": "03_my_workspace/01_projects/2026-08-隔离项目/个人内容.md",
+            "byte_size": 89,
+            "file_sha256": "01de97e63c305b434ff227ac4fa107166476788851f28d3fce4f48ae9a9f8e6d"
+          },
+          {
+            "relative_path": "03_my_workspace/01_projects/README.md",
+            "byte_size": 154,
+            "file_sha256": "ca50fcbbc061a2c9a88375fabbf85b6784bd0d01386e794df68b483d216a4f52"
+          },
+          {
+            "relative_path": "03_my_workspace/02_outputs/README.md",
+            "byte_size": 142,
+            "file_sha256": "5ba106999e316789dfa39fac7c6fae654be9cbd94d0beccf1f2a3e98ad121535"
+          },
+          {
+            "relative_path": "03_my_workspace/03_reviews/README.md",
+            "byte_size": 106,
+            "file_sha256": "26133d8f4348a1370233a9e2bbd238a488bdaf266dfd3f61fc3d206ad3359218"
+          },
+          {
+            "relative_path": "03_my_workspace/04_personal/README.md",
+            "byte_size": 109,
+            "file_sha256": "61e116fb9601a48f11a547d42224aca794dcd015be1ea72e5efe4cf56af2ae86"
+          },
+          {
+            "relative_path": "03_projects/README.md",
+            "byte_size": 3806,
+            "file_sha256": "1d083fa5b11ef870ee04ad8925c0c4edbcfceef369b5df371c5230a2de444a94"
+          },
+          {
+            "relative_path": "04_templates/月度会议输入模板.md",
+            "byte_size": 1233,
+            "file_sha256": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f"
+          },
+          {
+            "relative_path": "04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/README.md",
+            "byte_size": 1577,
+            "file_sha256": "009609e69d1151facbf9db315050e196c806c889a602af2fbe820fee06ca2acc"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/发布说明模板.md",
+            "byte_size": 1413,
+            "file_sha256": "37042079dd6f96aa4e8c1b85e6c6257e9fd6c92f22ac3187e4cecea0ab27e52e"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/运营推进表.csv",
+            "byte_size": 120,
+            "file_sha256": "f76fad2daeb54dbe4d34c26b9f0dbea13c3806b05ecea89fde98be290a5c3fa0"
+          },
+          {
+            "relative_path": "04_templates/本地产物包/验收结果模板.md",
+            "byte_size": 1128,
+            "file_sha256": "a1ed91a1c812b2783a002ab025d8f7f62bdd43dc8cf67818dca602c7a128e965"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/README.md",
+            "byte_size": 1467,
+            "file_sha256": "56d627885e57140f05686447745aea08f89395e9f35c549cf97817921ea5ce9c"
+          },
+          {
+            "relative_path": "04_templates/运营推进表模板/schema.json",
+            "byte_size": 1597,
+            "file_sha256": "51a48d1d8b6affc6eddfd2181fba07a5f73052081db504cae35038e49669f246"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟证据.json",
+            "byte_size": 6157,
+            "file_sha256": "2b76204a33175d1444ddf44877e6b4d54d09939822742ca6860827d6d7b9d12c"
+          },
+          {
+            "relative_path": "05_reviews/v0.2-隔离模拟验收记录.md",
+            "byte_size": 6126,
+            "file_sha256": "d89a5278a0e4f13efab9cd993179da8fb3be352bf8da7d21cede52b4ddb73ef7"
+          },
+          {
+            "relative_path": "05_reviews/月度复盘候选/README.md",
+            "byte_size": 2311,
+            "file_sha256": "d711755f42cef076d40730609e4593e1304dd6872fa0edff3e53a14335161e12"
+          },
+          {
+            "relative_path": "05_reviews/独立运行验收表.md",
+            "byte_size": 3312,
+            "file_sha256": "d1d97992b8f90c26964dbb8e6ca0febb92f5ecdd8d1bf11e8dc8ed76a6dafd50"
+          },
+          {
+            "relative_path": "05_upstream_candidates/README.md",
+            "byte_size": 175,
+            "file_sha256": "4cf11f6cf4837489d2f2ac4dc6d47accc94cb46182a11c0492a4123346a8c16c"
+          },
+          {
+            "relative_path": "AGENTS.md",
+            "byte_size": 3001,
+            "file_sha256": "ff2e66d2a5c104418185bc4d6362e0dfbde79480a5f9c870c0cc74ce24e6caa6"
+          },
+          {
+            "relative_path": "README.md",
+            "byte_size": 3260,
+            "file_sha256": "b7701398bcfb35b315482efb9da1591c3a68098fed7611f282cbee728fab312a"
+          },
+          {
+            "relative_path": "workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          },
+          {
+            "relative_path": "团队接入卡.md",
+            "byte_size": 1751,
+            "file_sha256": "a9e204225560f9c5c332a1b9d5f2700d6309b35f05e208b3f5bf0afdc395ae93"
+          }
+        ],
+        "aggregate_sha256": "e44c1ffcef996be0632b5797919345220407ad69347d267878c1b9aa7c3215ca"
+      },
+      "artifact_inventory": {
+        "inventory_scope_alias": "package-root",
+        "entries": [
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/00_workspace/工作台地图.local.md",
+            "byte_size": 528,
+            "file_sha256": "addfba9d937dceaf73c8dcc671e889d55a9625eb1ced96d54d4b50ac979d1791"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/01_shared_context/黑鲨经营边界.md",
+            "byte_size": 3043,
+            "file_sha256": "339fd25c1f99bd9c15fbb7b1a6695ca3ce8329015dc2d884bf86a40182208d1e"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/03_my_workspace/01_projects/2026-08-隔离项目/个人内容.md",
+            "byte_size": 89,
+            "file_sha256": "01de97e63c305b434ff227ac4fa107166476788851f28d3fce4f48ae9a9f8e6d"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/SKILL.md",
+            "byte_size": 6958,
+            "file_sha256": "15d4f7e998fe176686bb7e40200c7f12e67eaac90f2f220174189ce3134767f0"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md",
+            "byte_size": 2719,
+            "file_sha256": "5cdffb00f7599e76f0a9fc02f9ad4db5b9d0620fd1cb963114079fb70cc7c10a"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md",
+            "byte_size": 5246,
+            "file_sha256": "6434cf3eb3741571d6da15f022be7da4cd7f7c558499927d0655a9c6e90d691b"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md",
+            "byte_size": 4976,
+            "file_sha256": "b898ae5b341a0348b8c35a25c8931748c63e7c1fe830ea3aa85dd19e21c9ee37"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/SKILL.md",
+            "byte_size": 2974,
+            "file_sha256": "701abbc7fc420149a04c3e995e09db0448f2952b45d3e899df4a44e37c74fea9"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/references/first-run.md",
+            "byte_size": 6872,
+            "file_sha256": "a9d62d8d9f1089f7a0763378765eef7b6a1aad53cc4111f465a1dada8ce82f72"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/references/update-and-conflict.md",
+            "byte_size": 1632,
+            "file_sha256": "7366ba9bf836d4a6e59cb98d27d1826a160fc1596e6923155f178c4f9b1d3ef6"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/.agents/skills/blackshark-ops-router/references/workspace-map-contract.md",
+            "byte_size": 907,
+            "file_sha256": "80e42eb6b57efd69fa6b88d0cbfcfcc21692cd75d90f9654cab48ae1300042d8"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/01_shared_context/黑鲨经营边界.md",
+            "byte_size": 2964,
+            "file_sha256": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/00-七店索引.md",
+            "byte_size": 1822,
+            "file_sha256": "76d0610b153ab4e5d79bf1a11029b5d2c8182a27f022cd0a549fd2b78ef92c49"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/01-一店.md",
+            "byte_size": 2409,
+            "file_sha256": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/02-二店.md",
+            "byte_size": 2888,
+            "file_sha256": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/03-三店.md",
+            "byte_size": 2239,
+            "file_sha256": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/04-四店.md",
+            "byte_size": 2287,
+            "file_sha256": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/05-五店.md",
+            "byte_size": 2486,
+            "file_sha256": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/06-野马.md",
+            "byte_size": 2839,
+            "file_sha256": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/02_store_cards/07-七店.md",
+            "byte_size": 2479,
+            "file_sha256": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/04_templates/月度运营方案模板.md",
+            "byte_size": 2348,
+            "file_sha256": "53ccfef8569e210d0b57c46c9cf11f46e3b20c3bf4716f34bf9890b7386241ba"
+          },
+          {
+            "relative_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/incoming/workspace-manifest.json",
+            "byte_size": 717,
+            "file_sha256": "b95af5246119a2a8ccac25ffb071cba4102d48ec937d311487156558b5145d9a"
+          }
+        ],
+        "aggregate_sha256": "b4e67c9b0f94387384a8fde12f6d5db39483ea93b34c689b00287cad32d1d79a"
+      },
+      "protected_artifacts": [
+        {
+          "fixture_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/00_workspace/工作台地图.local.md",
+          "before_sha256": "addfba9d937dceaf73c8dcc671e889d55a9625eb1ced96d54d4b50ac979d1791",
+          "after_sha256": "addfba9d937dceaf73c8dcc671e889d55a9625eb1ced96d54d4b50ac979d1791"
+        },
+        {
+          "fixture_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/01_shared_context/黑鲨经营边界.md",
+          "before_sha256": "339fd25c1f99bd9c15fbb7b1a6695ca3ce8329015dc2d884bf86a40182208d1e",
+          "after_sha256": "339fd25c1f99bd9c15fbb7b1a6695ca3ce8329015dc2d884bf86a40182208d1e"
+        },
+        {
+          "fixture_path": "05_reviews/fixtures/v0.2-isolated-simulation/scenario-05/current/03_my_workspace/01_projects/2026-08-隔离项目/个人内容.md",
+          "before_sha256": "01de97e63c305b434ff227ac4fa107166476788851f28d3fce4f48ae9a9f8e6d",
+          "after_sha256": "01de97e63c305b434ff227ac4fa107166476788851f28d3fce4f48ae9a9f8e6d"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "未验证网络下载",
+    "未验证真实 Obsidian GUI",
+    "未验证真实飞书",
+    "未完成运营人员 A/B 实机独立验收"
+  ]
+}

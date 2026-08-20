@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "workspace": "blackshark-team-os",
+  "display_name": "黑鲨门店运营工作台",
+  "release": "v0.2",
+  "public_repository": "https://github.com/clank123/blackshark-team-os.git",
+  "local_map": "00_workspace/工作台地图.local.md",
+  "official_paths": {
+    "shared_context": "01_shared_context",
+    "store_cards": "02_store_cards",
+    "templates": "04_templates"
+  },
+  "default_personal_paths": {
+    "inbox": "03_my_workspace/00_inbox",
+    "projects": "03_my_workspace/01_projects",
+    "outputs": "03_my_workspace/02_outputs",
+    "reviews": "03_my_workspace/03_reviews",
+    "personal": "03_my_workspace/04_personal",
+    "upstream_candidates": "05_upstream_candidates"
+  }
+}

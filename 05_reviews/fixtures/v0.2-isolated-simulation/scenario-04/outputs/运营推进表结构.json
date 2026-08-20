@@ -1,0 +1,48 @@
+{
+  "version": "0.1",
+  "target_store": "二店",
+  "month": "2026-08",
+  "tables": 1,
+  "table_name": "本月推进表",
+  "fields": [
+    {"name": "动作", "type": "text", "primary": true},
+    {"name": "执行线", "type": "single_select", "options": ["门店日常", "私域轻动作"]},
+    {"name": "状态", "type": "single_select", "options": ["未开始", "进行中", "已完成", "阻塞", "待拍板", "取消"]},
+    {"name": "归属", "type": "single_select", "options": ["黑鲨", "二店"]},
+    {"name": "交付物/验收", "type": "text"},
+    {"name": "实际情况记录", "type": "text"},
+    {"name": "截止日期", "type": "date"},
+    {"name": "开始日期", "type": "date"},
+    {"name": "承接人", "type": "person"},
+    {"name": "阻塞/待确认", "type": "text"}
+  ],
+  "views": [
+    {"name": "全部推进", "type": "grid", "sort": [{"field": "截止日期", "order": "asc"}]},
+    {"name": "本月排期", "type": "gantt", "start_field": "开始日期", "end_field": "截止日期"},
+    {"name": "按承接人", "type": "grid", "group_by": "承接人"},
+    {
+      "name": "待拍板与阻塞",
+      "type": "grid",
+      "filter": {
+        "field": "状态",
+        "operator": "in",
+        "values": ["待拍板", "阻塞"]
+      }
+    },
+    {
+      "name": "门店要做",
+      "type": "grid",
+      "filter": {
+        "logic": "and",
+        "conditions": [
+          {"field": "归属", "operator": "equals", "value": "二店"},
+          {
+            "field": "状态",
+            "operator": "not_in",
+            "values": ["已完成", "取消"]
+          }
+        ]
+      }
+    }
+  ]
+}
