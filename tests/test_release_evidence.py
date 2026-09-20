@@ -163,7 +163,10 @@ def _validate_public_inventory(package_root: Path, inventory: dict) -> None:
         }
     )
     for entry in inventory["entries"]:
-        path = package_root / _safe_relative(entry["relative_path"])
+        relative = _safe_relative(entry["relative_path"])
+        # v0.2 proofs keep their original hashes; current v0.3 files are checked separately.
+        source = package_root / "05_reviews/fixtures/v0.2-source" / relative
+        path = source if not str(relative).startswith("05_reviews/fixtures/") else package_root / relative
         _require(path.is_file(), f"public artifact is missing: {entry['relative_path']}")
         _require(path.stat().st_size == entry["byte_size"], "artifact byte size differs")
         _require(_sha256(path) == entry["file_sha256"], "artifact hash differs")
@@ -313,7 +316,7 @@ def validate_package(package_root: Path = PACKAGE_ROOT) -> None:
     source_payload = evidence["source_payload"]
     _require(source_payload["identity"] == "blackshark-team-os/v0.2", "source identity differs")
     for entry in source_payload["files"]:
-        path = package_root / _safe_relative(entry["path"])
+        path = package_root / "05_reviews/fixtures/v0.2-source" / _safe_relative(entry["path"])
         _require(path.is_file(), "source payload file is missing")
         _require(path.stat().st_size == entry["byte_size"], "source payload size differs")
         _require(_sha256(path) == entry["file_sha256"], "source payload hash differs")

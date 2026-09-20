@@ -20,3 +20,7 @@
 !03_my_workspace/04_personal/README.md
 05_upstream_candidates/*
 !05_upstream_candidates/README.md
+
+__pycache__/
+*.pyc
+.DS_Store

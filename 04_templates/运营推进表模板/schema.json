@@ -1,24 +1,160 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "tables": 1,
   "table_name": "本月推进表",
   "fields": [
-    {"name": "动作", "type": "text", "primary": true},
-    {"name": "执行线", "type": "single_select", "dynamic_options": true},
-    {"name": "状态", "type": "single_select", "options": ["未开始", "进行中", "已完成", "阻塞", "待拍板", "取消"]},
-    {"name": "归属", "type": "single_select", "options_template": ["黑鲨", "{{目标门店}}"]},
-    {"name": "交付物/验收", "type": "text"},
-    {"name": "实际情况记录", "type": "text"},
-    {"name": "截止日期", "type": "date"},
-    {"name": "开始日期", "type": "date"},
-    {"name": "承接人", "type": "person"},
-    {"name": "阻塞/待确认", "type": "text"}
+    {
+      "name": "动作",
+      "type": "text",
+      "primary": true
+    },
+    {
+      "name": "执行线",
+      "type": "single_select",
+      "dynamic_options": true
+    },
+    {
+      "name": "状态",
+      "type": "single_select",
+      "options": [
+        "未开始",
+        "进行中",
+        "已完成",
+        "阻塞",
+        "待拍板",
+        "取消"
+      ]
+    },
+    {
+      "name": "归属",
+      "type": "single_select",
+      "options_template": [
+        "黑鲨",
+        "{{目标门店}}"
+      ]
+    },
+    {
+      "name": "交付物/验收",
+      "type": "text"
+    },
+    {
+      "name": "实际情况记录",
+      "type": "text"
+    },
+    {
+      "name": "截止日期",
+      "type": "date"
+    },
+    {
+      "name": "开始日期",
+      "type": "date"
+    },
+    {
+      "name": "承接人",
+      "type": "person"
+    },
+    {
+      "name": "阻塞/待确认",
+      "type": "text"
+    },
+    {
+      "name": "任务编号",
+      "type": "text",
+      "unique_within": "store_month"
+    },
+    {
+      "name": "父任务",
+      "type": "self_relation",
+      "multiple": false
+    }
   ],
   "views": [
-    {"name": "全部推进", "type": "grid", "sort": [{"field": "截止日期", "order": "asc"}]},
-    {"name": "本月排期", "type": "gantt", "start_field": "开始日期", "end_field": "截止日期"},
-    {"name": "按承接人", "type": "grid", "group_by": "承接人", "sort": [{"field": "截止日期", "order": "asc"}]},
-    {"name": "待拍板与阻塞", "type": "grid", "filter": {"field": "状态", "operator": "in", "values": ["待拍板", "阻塞"]}},
-    {"name": "门店要做", "type": "grid", "filter": {"logic": "and", "conditions": [{"field": "归属", "operator": "equals", "value": "{{目标门店}}"}, {"field": "状态", "operator": "not_in", "values": ["已完成", "取消"]}]}, "visible_fields": ["动作", "状态", "承接人", "开始日期", "截止日期", "交付物/验收", "阻塞/待确认"]}
-  ]
+    {
+      "name": "全部推进",
+      "type": "grid",
+      "sort": [
+        {
+          "field": "截止日期",
+          "order": "asc"
+        }
+      ],
+      "hierarchy": {
+        "parent_field": "父任务",
+        "expandable": true
+      }
+    },
+    {
+      "name": "本月排期",
+      "type": "gantt",
+      "start_field": "开始日期",
+      "end_field": "截止日期"
+    },
+    {
+      "name": "按承接人",
+      "type": "grid",
+      "group_by": "承接人",
+      "sort": [
+        {
+          "field": "截止日期",
+          "order": "asc"
+        }
+      ]
+    },
+    {
+      "name": "待拍板与阻塞",
+      "type": "grid",
+      "filter": {
+        "field": "状态",
+        "operator": "in",
+        "values": [
+          "待拍板",
+          "阻塞"
+        ]
+      }
+    },
+    {
+      "name": "门店要做",
+      "type": "grid",
+      "filter": {
+        "logic": "and",
+        "conditions": [
+          {
+            "field": "归属",
+            "operator": "equals",
+            "value": "{{目标门店}}"
+          },
+          {
+            "field": "状态",
+            "operator": "not_in",
+            "values": [
+              "已完成",
+              "取消"
+            ]
+          }
+        ]
+      },
+      "visible_fields": [
+        "动作",
+        "状态",
+        "承接人",
+        "开始日期",
+        "截止日期",
+        "交付物/验收",
+        "阻塞/待确认"
+      ]
+    }
+  ],
+  "hierarchy": {
+    "root": "主项目",
+    "children": "子任务",
+    "parent_field": "父任务",
+    "id_field": "任务编号",
+    "native_display_required": true
+  },
+  "embedding": {
+    "required": true,
+    "document_section": "7. 这套文件怎么用",
+    "view": "全部推进",
+    "link_is_not_embed": true
+  }
 }
