@@ -7,12 +7,15 @@ description: 黑鲨团队经营入口。运营拿到整体方向需要通过对�
 
 先读工作台根 README.md、workspace-manifest.json。根目录从本 Skill 向上定位，不依赖作者机器。完整包缺失时可先基于用户材料给有边界的帮助；需要补齐时才读 [首次启用](references/first-run.md)。
 
+开始任务时执行根目录 `python3 scripts/workspace_update.py check`，本轮已检查则沿用；脚本缓存24小时。无输出、失败或超时继续任务。有新版本时把真实版本号、改动和“更新黑鲨工作台到 vX.Y.Z”提示放在任务结果末尾，不能把检查失败说成已是最新。用户要求检查更新时可用 `check --force --json`；要求安装时直接进入[更新与冲突](references/update-and-conflict.md)，不把检查提醒当作安装授权。
+
 ## 先接住问题
 
 识别门店、当前目的、已决定事项及所需结果。材料里已有的答案直接用，不要求用户重填。当前问题可直接回答时先给有用判断，再补影响选择的少量问题。不要在普通问题前要求配置 Obsidian、目录、发布位置或月度会议。
 
 - **月度规划或月度修改**：读取同包 `../blackshark-monthly-ops-compiler/SKILL.md`，本轮继续做完可交付部分，不只返回 Skill 名称。
 - **日常卡点／想法／具体制作**：读 [日常求助](references/daily-help.md) 和根目录 `01_shared_context/月度经营框架.md` 中相关方法；若用户已要求具体方案、文字或清单，完成它，不只给启发问题。
+- **拆任务／安排工作量**：读根目录 `01_shared_context/action-planning/SKILL.md`，用其共同拆解与尺度判断。尚未想清楚时围绕当前工作块讨论；输入已经充分时直接交接，不固定提问轮数。
 - **收到新的门店事实／执行结果**：读根目录 `01_shared_context/门店资料使用与更新.md`，接回当前门店记录，修受影响的判断；不把每次闲聊都归档。
 - **首次安装／迁移／升级**：才按 [首次启用](references/first-run.md)、[更新与冲突](references/update-and-conflict.md) 处理。
 

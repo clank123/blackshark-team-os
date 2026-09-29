@@ -2,9 +2,9 @@
   "schema_version": 3,
   "workspace": "blackshark-team-os",
   "display_name": "黑鲨门店运营工作台",
-  "release": "v0.3",
+  "release": "v0.4.0",
   "release_channel": "prerelease",
-  "release_url": "https://github.com/clank123/blackshark-team-os/releases/tag/v0.3",
+  "release_url": "https://github.com/clank123/blackshark-team-os/releases/tag/v0.4.0",
   "public_repository": "https://github.com/clank123/blackshark-team-os.git",
   "local_map": "00_workspace/工作台地图.local.md",
   "official_paths": {
@@ -21,13 +21,19 @@
     "upstream_candidates": "05_upstream_candidates"
   },
   "versions": {
-    "method": "0.3",
+    "method": "0.4.0",
     "plan_template": "0.2",
     "board_template": "0.2",
-    "skill": "0.3"
+    "skill": "0.4.0"
   },
   "modes": [
     "monthly_planning",
     "daily_help"
-  ]
+  ],
+  "updater": {
+    "version": "0.4.0",
+    "check": "python3 scripts/workspace_update.py check",
+    "release_inventory": "release-manifest.json",
+    "protected_data": "03_my_workspace, 03_projects, 05_upstream_candidates and local maps are not overwritten"
+  }
 }

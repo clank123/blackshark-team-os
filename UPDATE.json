@@ -1,0 +1,7 @@
+{
+  "workspace": "blackshark-team-os",
+  "version": "0.4.0",
+  "channel": "prerelease",
+  "summary": "逐块把任务想清楚；使用时发现新版，按版本更新并保留个人资料",
+  "release_url": "https://github.com/clank123/blackshark-team-os/releases/tag/v0.4.0"
+}

@@ -1,4 +1,4 @@
-# 首次安装与迁移 v0.3
+# 首次安装与迁移
 
 普通经营对话不以安装、地图或迁移为前置。完整包已在当前工作区时，按入口和 manifest 直接处理当前任务；本文件仅在用户要求安装、搬移、补齐或迁移时读取。
 
@@ -6,7 +6,7 @@
 
 在用户给定位置检查现有完整包、manifest 和相关目录。用户已指定来源、位置、创建或迁移范围时继承其授权；否则先说明推荐位置和实际影响，只问缺的选择。不要为回答普通问题扫描整个磁盘、安装工具或移动知识库。
 
-仅有 Router 时，公开来源为 https://github.com/clank123/blackshark-team-os；有 manifest 时核对其来源。下载或复制到唯一暂存目录，检查 workspace 为 blackshark-team-os、版本与声明一致、关键文件齐全。当前为 schema_version 3 / v0.3 试用版；指定发布入口为 https://github.com/clank123/blackshark-team-os/releases/tag/v0.3，不能只查排除预发布的 latest 接口后误报没有新版。schema_version 2 / v0.2 是旧版，可按其实际能力使用或用于迁移，不能称为 v0.3。无法取得指定版本时如实说明，不循环下载。
+仅有 Router 时，公开来源为 https://github.com/clank123/blackshark-team-os；有 manifest 时核对其来源。下载或复制到唯一暂存目录，检查 workspace 为 blackshark-team-os、版本与声明一致、关键文件齐全。当前包为 schema_version 3 / v0.4.0 试用版；指定发布入口为 https://github.com/clank123/blackshark-team-os/releases/tag/v0.4.0。后续以官方UPDATE.json与对应标签核对，不能只查排除预发布的latest接口后误报没有新版。旧版本可按其实际能力使用，升级按[更新规则](update-and-conflict.md)处理，不能把旧包称为新版。无法取得指定版本时如实说明，不循环下载。
 
 用户提供 ZIP 时先定位本机可读取文件，检查归档路径没有绝对路径、越界路径或指向外部的符号链接，再解压到新的独立目录，保留 `.agents` 隐藏目录；不解压覆盖已有工作台。核对根目录的 AGENTS.md、manifest、两项 Skill 和模板后，告诉用户应在 Codex 打开哪个完整文件夹；仅在原聊天中读过文件不等于已经切换项目或启用工作台。内部整包已有个人目录及资料时直接核对复用；资料补充包合并到既有工作台时先比对当前记录与来源，保留较新的本地内容。具体用法见根目录团队接入卡。
 

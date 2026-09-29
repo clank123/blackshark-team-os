@@ -1,0 +1,33 @@
+{
+  "workspace": "blackshark-team-os",
+  "version": "0.1",
+  "commit": "bc4e5f960aff401e0b722d69b175bfd1ffaddf9a",
+  "files": {
+    ".agents/skills/blackshark-monthly-ops-compiler/SKILL.md": "cc1c5751aef4aed7dde215127b5b41a00e437e9ac3c7805691a15ecb73022e9f",
+    ".agents/skills/blackshark-monthly-ops-compiler/agents/openai.yaml": "79ab88c5eb464c2994d0be5da63e05bab8ad2a35fdc1635af32de41447592b23",
+    ".agents/skills/blackshark-monthly-ops-compiler/references/input-contract.md": "c739959bb08f01391b2c3265afeadcfce83f88e6a26f8bc2ad56c7010f4372d0",
+    ".agents/skills/blackshark-monthly-ops-compiler/references/output-contract.md": "b827af313e2c7607cb9f102bc50c96de1f47b8c4bdd8264d99a58bb623227d01",
+    ".agents/skills/blackshark-monthly-ops-compiler/references/publish-and-verify.md": "8391e97902dcf41472ae59d72667754def2ce5e2cb04a7928a25bbb71667ff29",
+    ".gitignore": "0d4d46525e12585313e902d9ada7df47519888b8450fb9ac3455331a231e1e9b",
+    "01_shared_context/月度经营框架.md": "2bac10b67de964434671e78ff8e0379ad63025ebea9bdb1a984b1e4906a9e978",
+    "01_shared_context/胡子品牌共享真值.md": "42a297960230e79e71b7db15caaec17f833d970876f90b995886bb66b0656bcd",
+    "01_shared_context/黑鲨经营边界.md": "2062d83e0284b738c5c73a3dac0c6140ade580b42a13a3004b6938c0cd7303ed",
+    "02_store_cards/00-七店索引.md": "edf1c088fcc15fbba7ea0d57155a3da6fd219ca45ce30c2871685a030fc5d056",
+    "02_store_cards/01-一店.md": "d28ed44e7dae5494b720bf130f32b486ea9016e61f54ea0d1670f65eba6419f0",
+    "02_store_cards/02-二店.md": "a07630b885ebaed8742572c452f2a5fda15943675e1f9a5188912eb444b37255",
+    "02_store_cards/03-三店.md": "38921939f502f974e26280a2bd5e345edbdd9c8f8a5228163a6e98f19bb12a3c",
+    "02_store_cards/04-四店.md": "1eeafbc42f77c56b16d1495c209c70904990254484f6ff41a80adea5642ae6d5",
+    "02_store_cards/05-五店.md": "7f2291569ce34b4b0cc92628c95c068b259e5e95f42b76a73d3735458b642072",
+    "02_store_cards/06-野马.md": "215b0b60bf4874be0e1e96629fcdf59e43eab33fcd37a5c5f27f74c4565609df",
+    "02_store_cards/07-七店.md": "e94e35171b027337385fec2afb17c700b592b6adb30877745467a9e71a0222cb",
+    "04_templates/月度会议输入模板.md": "bbd8df478d99521d7385d2f838a7c3582a4fcde8171218146249e5caa078bf6f",
+    "04_templates/月度运营方案模板.md": "fcf24ef81ad9905f17014be2988a8ab9dd0eebe028fa8b9fbbae017e423cae21",
+    "04_templates/运营推进表模板/README.md": "56d627885e57140f05686447745aea08f89395e9f35c549cf97817921ea5ce9c",
+    "04_templates/运营推进表模板/schema.json": "51a48d1d8b6affc6eddfd2181fba07a5f73052081db504cae35038e49669f246",
+    "05_reviews/月度复盘候选/README.md": "8c66b48a04bcfc114a551efb0d795d92efede7fd25ebb99848b4eb6664f40858",
+    "05_reviews/独立运行验收表.md": "e76a3b8d5b7d7dfca95c8ea49c4b894cd13a5a1e8b2ab042d7ec16822dc1bdf4",
+    "AGENTS.md": "6cb77d967acbfc918b4e7cbe7776c7cb70061e3fb3b749b8bb6b9cd4315e6b24",
+    "README.md": "4e44ce9f339e4a88a55c2f2273ad9cf04f1806ad6eb7667999087e6fa63f8b22",
+    "团队接入卡.md": "73e82c0624cbc7d7340fc41d793479246bf186d71e87e4bbb0fddc1fb8a3a602"
+  }
+}
