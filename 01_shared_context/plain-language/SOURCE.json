@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/clank123/blackshark-brand-store-skills",
+  "version": "v0.2.0",
+  "commit": "ab794a8dfe27b82a0be418c0dc1e80952c599a80",
+  "skill": "blackshark-plain-language",
+  "path": "skills/blackshark-plain-language",
+  "license": "Apache-2.0",
+  "local_changes": false
+}

@@ -3,11 +3,15 @@ name: blackshark-monthly-ops-compiler
 description: 黑鲨月度规划对话与编译。运营拿到品牌或负责人的方向、会议材料或半成品后，结合本店资料逐步形成七段式月度方案、主项目下展开子任务的推进表，并按请求在飞书方案中内嵌表视图；也用于修订和复盘既有月度版本。
 ---
 
-# 黑鲨月度经营编译器 v0.4.0
+# 黑鲨月度经营编译器 v0.5.0
 
-工作区根从本 Skill 向上定位。读根目录 manifest、`01_shared_context/月度经营框架.md`、`01_shared_context/门店资料使用与更新.md`，以及 [输入约定](references/input-contract.md)。只读目标门店及当期有关材料。
+工作区根从本 Skill 向上定位，先读根目录 manifest。
 
 直接调用本入口时也运行根目录 `python3 scripts/workspace_update.py check`；本轮Router已检查则沿用。缓存24小时，无输出、失败或超时继续工作；只有真实新版提示才附在当前结果末尾。用户明确要求升级时按Router的更新规则处理。
+
+用户当前只想看懂已有内容时（如“这条任务没看懂”“用大白话解释”），先读根目录 `01_shared_context/plain-language/SKILL.md`，用原句、已有角色及相关前后文直接解释；不先要求店名、月份或完整月度材料。引文中的同类措辞不算调用。解释完回原任务；本分支不生成整套方案、不改原文或执行原任务。
+
+当前请求要做月度规划或修订时，再读 `01_shared_context/月度经营框架.md`、`01_shared_context/门店资料使用与更新.md` 和 [输入约定](references/input-contract.md)，只读目标门店及当期有关材料。
 
 ## 1. 接住已有方向与工作
 

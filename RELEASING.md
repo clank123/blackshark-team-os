@@ -2,7 +2,7 @@
 
 继续使用本仓库和现有两项Skill名称。修复用补丁号，新增兼容能力用次版本；破坏性改变需单独说明迁移。现有试用通道保留，在UPDATE.json中明确供团队采用的版本。不要重新使用已发布标签。
 
-1. 完成并检查实际改动。来自通用核心的方法，先使用明确公开标签；同步 `01_shared_context/action-planning/` 的原文件、许可与SOURCE.json来源，不让这里成为独立分叉。
+1. 完成并检查实际改动。来自通用核心的方法，先使用明确公开标签；同步 `01_shared_context/` 下对应方法目录（如 `action-planning/`、`plain-language/`）的原文件、许可与SOURCE.json来源，不让这里成为独立分叉。
 2. 更新 `workspace-manifest.json` 的release及受影响的子版本、`VERSION`、`UPDATE.json`版本/一句改动/版本页地址、当前README和接入卡及CHANGELOG。未变的模板版本不升级。
 3. 运行 `python3 -m unittest discover -s tests`。新增更新逻辑要实际验证旧版升级、个人资料保留及冲突；不是只检查提示文字。
 4. 运行 `python3 scripts/build_release_manifest.py`，再以 `--check`核对。它只列允许的官方文件，不列个人目录、地图、缓存或自己，避免自引用哈希。确认所有新增或删除均属于公开范围，检查后不要再改文件而忘记重建清单。

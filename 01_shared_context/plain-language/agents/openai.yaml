@@ -1,0 +1,6 @@
+interface:
+  display_name: "黑鲨大白话"
+  short_description: "结合你正在做的事，把难懂的词句和任务解释清楚，让你知道怎样继续做"
+  default_prompt: "用 $blackshark-plain-language 结合我的岗位和这件事的上下文，讲清这段话的意思；如果涉及任务，也告诉我接下来怎么做。"
+policy:
+  allow_implicit_invocation: false

@@ -2,9 +2,9 @@
   "schema_version": 3,
   "workspace": "blackshark-team-os",
   "display_name": "黑鲨门店运营工作台",
-  "release": "v0.4.0",
+  "release": "v0.5.0",
   "release_channel": "prerelease",
-  "release_url": "https://github.com/clank123/blackshark-team-os/releases/tag/v0.4.0",
+  "release_url": "https://github.com/clank123/blackshark-team-os/releases/tag/v0.5.0",
   "public_repository": "https://github.com/clank123/blackshark-team-os.git",
   "local_map": "00_workspace/工作台地图.local.md",
   "official_paths": {
@@ -21,10 +21,10 @@
     "upstream_candidates": "05_upstream_candidates"
   },
   "versions": {
-    "method": "0.4.0",
+    "method": "0.5.0",
     "plan_template": "0.2",
     "board_template": "0.2",
-    "skill": "0.4.0"
+    "skill": "0.5.0"
   },
   "modes": [
     "monthly_planning",
