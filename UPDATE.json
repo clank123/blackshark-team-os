@@ -1,7 +1,7 @@
 {
   "workspace": "blackshark-team-os",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "channel": "prerelease",
-  "summary": "方案变化后沿原任务调整后续依赖与条件排期，接回旧问题；保留已有入口和团队资料",
-  "release_url": "https://github.com/clank123/blackshark-team-os/releases/tag/v0.6.0"
+  "summary": "原入口接回口述、图片与交付凭证，按已有验收条件核对缺项和后续跟进；具体闭合及飞书写回仍需确认，个人资料保留",
+  "release_url": "https://github.com/clank123/blackshark-team-os/releases/tag/v0.6.1"
 }
