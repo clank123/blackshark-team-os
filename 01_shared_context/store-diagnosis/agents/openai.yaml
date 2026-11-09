@@ -1,0 +1,4 @@
+interface:
+  display_name: "黑鲨·经营诊断与需求画像"
+  short_description: "从经营数据和顾客选择形成判断，持续修正需求画像并接入月规划"
+  default_prompt: "用 $blackshark-store-diagnosis 检查这家店的经营数据和顾客选择，说明当前判断、证据缺口及应调整的方向。"

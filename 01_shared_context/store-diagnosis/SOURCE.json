@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/clank123/blackshark-brand-store-skills",
+  "version": "v0.3.0",
+  "commit": "1976f6b7e076ef1bfe753d39937bb98b66d647c1",
+  "skill": "blackshark-store-diagnosis",
+  "path": "skills/blackshark-store-diagnosis",
+  "license": "Apache-2.0",
+  "local_changes": false,
+  "files": {
+    "LICENSE": {
+      "path": "skills/blackshark-store-diagnosis/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "SKILL.md": {
+      "path": "skills/blackshark-store-diagnosis/SKILL.md",
+      "sha256": "caabd6d08db9fb1272b314149794120eedcd8c3f5f205a4713677818210b2b46"
+    },
+    "references/diagnostic-workflow.md": {
+      "path": "skills/blackshark-store-diagnosis/references/diagnostic-workflow.md",
+      "sha256": "a2cc528567581a5cf60bdb2746378aa576901ffc8be0e1aea7ecead6406cba47"
+    },
+    "references/data-contract.md": {
+      "path": "skills/blackshark-store-diagnosis/references/data-contract.md",
+      "sha256": "7f249584037040ffb50c5fb29429cbc8f6f46729b50da97ebfdcdba83c5fffaf"
+    },
+    "references/feedback-handoff.md": {
+      "path": "skills/blackshark-store-diagnosis/references/feedback-handoff.md",
+      "sha256": "e0d216df115f1cccaa151c929ef11789bafbb6b4fd35fe166a1a0263bc1269d6"
+    },
+    "references/customer-choice.md": {
+      "path": "skills/blackshark-store-diagnosis/references/customer-choice.md",
+      "sha256": "2465678a6b438ae00d5d3d082bf8dbdeabbdfa75528b051b9105d5747fa4644f"
+    },
+    "agents/openai.yaml": {
+      "path": "skills/blackshark-store-diagnosis/agents/openai.yaml",
+      "sha256": "58457e4cd54e979fab42ed93cfa4fd8c48f7fc3de41fce97a743849db2c70140"
+    }
+  }
+}

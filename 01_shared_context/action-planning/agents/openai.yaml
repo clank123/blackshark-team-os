@@ -1,0 +1,4 @@
+interface:
+  display_name: "BlackShark Action Planning"
+  short_description: "逐块想清任务目的、前置判断与具体交接，形成可执行的分工和排期"
+  default_prompt: "使用 $blackshark-action-planning，接住已定方向，陪我逐块想清任务为什么做、从哪里开始、交出什么，再按需要安排岗位与时间。"

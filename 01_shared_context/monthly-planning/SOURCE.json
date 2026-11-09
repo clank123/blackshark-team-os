@@ -1,0 +1,59 @@
+{
+  "repository": "https://github.com/clank123/blackshark-brand-store-skills",
+  "version": "v0.3.0",
+  "commit": "1976f6b7e076ef1bfe753d39937bb98b66d647c1",
+  "skill": "blackshark-monthly-planning",
+  "path": "skills/blackshark-monthly-planning",
+  "license": "Apache-2.0",
+  "local_changes": false,
+  "files": {
+    "LICENSE": {
+      "path": "skills/blackshark-monthly-planning/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "TEAM-INTEGRATION.md": {
+      "path": "skills/blackshark-monthly-planning/TEAM-INTEGRATION.md",
+      "sha256": "4309f1e56d8de61384d2202d7be58d9dbc2726dae43b4542f7b252c9796a5a63"
+    },
+    "SKILL.md": {
+      "path": "skills/blackshark-monthly-planning/SKILL.md",
+      "sha256": "e32f7a939f376ae710680d168540ead8ee02a5159c769ce4731283193c4cbbbb"
+    },
+    "references/planning.md": {
+      "path": "skills/blackshark-monthly-planning/references/planning.md",
+      "sha256": "3a26307552c1e2cb95cf17f8fa40035878da91ab83a571df0738ebd01d54d3d0"
+    },
+    "references/marketing-choice.md": {
+      "path": "skills/blackshark-monthly-planning/references/marketing-choice.md",
+      "sha256": "3d232ec2809528f0888895d767dd84bccb503d25806daa0b4740bb79a6eff890"
+    },
+    "references/refresh-and-team.md": {
+      "path": "skills/blackshark-monthly-planning/references/refresh-and-team.md",
+      "sha256": "e7da3ef19ff16d9b12ddf3ceb4b329523f6e9842a5be00b00bf13b0fffbea8dd"
+    },
+    "references/feedback.md": {
+      "path": "skills/blackshark-monthly-planning/references/feedback.md",
+      "sha256": "ec476fbc59ee6a6c388893838c03fad219865ab4b01100e043692f85c927732c"
+    },
+    "references/workflow-quality.md": {
+      "path": "skills/blackshark-monthly-planning/references/workflow-quality.md",
+      "sha256": "5822067bf49a51260a9fe03681e56295673f273e5751cb0daf5b69dd660b8b8c"
+    },
+    "references/records.md": {
+      "path": "skills/blackshark-monthly-planning/references/records.md",
+      "sha256": "5f32c65d180b3d8a08254199d0251e81d4531718f85940320a451e705c85cffc"
+    },
+    "tests/test_planning_state.py": {
+      "path": "skills/blackshark-monthly-planning/tests/test_planning_state.py",
+      "sha256": "ff43ebef7463c6256faa48dca2ab4f4d7f504ae39fcfd2690a3afcbb490224f2"
+    },
+    "agents/openai.yaml": {
+      "path": "skills/blackshark-monthly-planning/agents/openai.yaml",
+      "sha256": "ba89f67abf99561feeffc535d583df7493d2eb52cbf1a6c60515d0bec2614b5f"
+    },
+    "scripts/planning_state.py": {
+      "path": "skills/blackshark-monthly-planning/scripts/planning_state.py",
+      "sha256": "5131f6564424bc12b8f6d3dceb4c8875e46246f53966205d8060cd64ad59967e"
+    }
+  }
+}

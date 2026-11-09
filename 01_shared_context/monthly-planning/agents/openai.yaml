@@ -1,0 +1,6 @@
+interface:
+  display_name: "黑鲨 · 门店下月规划"
+  short_description: "接回资料、人群库与上月结果，给下月建议，并随实际经营修正判断"
+  default_prompt: "使用 $blackshark-monthly-planning 为这家店做下月规划，先接回资料、人群库和上月结果，用大白话给建议及真正需要我拍板的事项。"
+policy:
+  allow_implicit_invocation: true

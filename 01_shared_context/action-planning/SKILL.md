@@ -42,6 +42,10 @@ Before scheduling, walk the necessary chain from preparation to delivery and act
 
 When timing or workload is requested, reverse-plan from the supplied milestones through real dependencies. Distinguish confirmed commitments, proposed dates, and conditional windows; external waits are not guaranteed durations. Separate active effort, elapsed waiting, and ongoing work by its actual frequency or quantity. Label estimates and their scope assumptions; never present them as measured productivity. Check parallel tasks against the same person's capacity, count shared effort once, and preserve the user's staffing and holiday decisions. A full-looking calendar with an impossible dependency is not executable.
 
+## Before handing over a complete plan
+
+For a complete operating plan, a revision after "too vague" feedback, or a plan entering a shared execution system, read the existing [content handoff check](references/action-structure.md#交付前的内容检查) and apply it to the actual draft. An agreed direction does not establish that the actions are ready. Check the source-to-plan content and the real handoffs before treating a task list as executable. An already concrete simple edit needs only a local check.
+
 ## Output
 
 Return, at the depth the task needs:
@@ -56,3 +60,9 @@ Return, at the depth the task needs:
 Missing commercial evidence does not prevent planning, but it does prevent claims of business effect. Do not equate publication, activity completion, or a filled template with customer behavior, profit, or method reliability.
 
 Use the user's existing carrier where possible. A compact task can read: “To enable [specific use], [role] takes [input], does/decides [work], and gives [output] to [recipient] by [window]; complete when [observable check].” Omit irrelevant parts and use a table only when comparison helps. Detailed discussion notes need not all be copied into the team's handoff.
+
+## Purpose, output and use
+
+每个工作块接通经营目的→本期希望改变什么→做法与假设→当前关键产出→实际使用→结果与下一次选择。继承来源的目的及证据边界，不能把活动名当目的。关键产出要有实际内容、接收者/用途、必需准确性与限制、依赖/岗位/条件排期、实际版本的完成凭证及后续观察。按委托粒度完成关键业务思考，同时保留专业岗位自主；共享产出只计一次准备，不重复算收益。交付合格、能用、实际用了、顾客变化与经营值得分别判断；局部未知不冻结独立工作。
+
+当候选承诺与商品选择范围、总费用、时段、服务或空间不匹配时，先把适配或变更决定接入工作；仅完成说明不能算提供物适配。目的、主次或投入调整后，同步修受影响产出、接收者和验收，保留独立有效工作，不只改项目标题。

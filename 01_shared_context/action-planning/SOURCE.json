@@ -1,8 +1,27 @@
 {
   "repository": "https://github.com/clank123/blackshark-brand-store-skills",
-  "version": "v0.1.0",
-  "commit": "1c239a0d88378f4c8d2046956250765464a57691",
+  "version": "v0.3.0",
+  "commit": "1976f6b7e076ef1bfe753d39937bb98b66d647c1",
   "skill": "blackshark-action-planning",
+  "path": "skills/blackshark-action-planning",
+  "license": "Apache-2.0",
   "local_changes": false,
-  "license": "Apache-2.0"
+  "files": {
+    "LICENSE": {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "SKILL.md": {
+      "path": "skills/blackshark-action-planning/SKILL.md",
+      "sha256": "89ac806673b5b1bd923076e6350c62447ca127d324cd9c99bc9c2c96a79817bd"
+    },
+    "references/action-structure.md": {
+      "path": "skills/blackshark-action-planning/references/action-structure.md",
+      "sha256": "2c22730bb771121df6b4354ac8b297b58c7566219d90815acce46fa38218687a"
+    },
+    "agents/openai.yaml": {
+      "path": "skills/blackshark-action-planning/agents/openai.yaml",
+      "sha256": "2e67d8124e481aad76b1c20b8722eb291c023e3a9148947f7f4e6ac59082eb1b"
+    }
+  }
 }
